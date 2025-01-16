@@ -1,5 +1,5 @@
 import { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -8,7 +8,13 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export function clientLoader() {
+  return { message: "Hello from the client!" };
+}
+
 export default function ACIndex() {
+  const loader = useLoaderData<typeof clientLoader>();
+
   return (
     <div>
       <div className="flex py-5">
