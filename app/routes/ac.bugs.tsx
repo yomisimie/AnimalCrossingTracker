@@ -163,7 +163,6 @@ export default function ACBugs() {
         </div>
         <a
           className="btn btn-error self-end"
-          onClick={() => setSelectedMonths([])}
           title="Clear data"
           aria-description="Clear data"
           href="#clear_data_modal"
@@ -268,7 +267,6 @@ export default function ACBugs() {
           <p className="py-4">This will delete all the saved data</p>
           <div className="modal-action">
             <a
-              href="#"
               className="btn btn-error"
               onClick={() => {
                 console.log("Clearing data");
@@ -278,9 +276,7 @@ export default function ACBugs() {
             >
               Yes
             </a>
-            <a href="#" className="btn btn-info">
-              No
-            </a>
+            <a className="btn btn-info">No</a>
           </div>
         </div>
       </div>

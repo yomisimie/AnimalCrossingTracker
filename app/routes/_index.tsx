@@ -10,9 +10,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="flex flex-col items-center gap-10 py-4">
       <header className="flex flex-col items-center gap-9">
-        <div className="h-[200px]">
+        <div className="h-40">
           <Link to="/">
             <img
               src="./logo.png"
@@ -23,8 +23,8 @@ export default function Index() {
         </div>
         <h1 className="leading text-5xl font-bold font-[FinkHeavy]">Tracker</h1>
       </header>
-      <nav className="flex flex-col items-center justify-center gap-2 rounded-3xl border border-gray-200 p-6 dark:border-gray-700">
-        <ul>
+      <nav className="flex flex-col items-center justify-center gap-2 rounded-3xl border border-gray-700 p-4 min-w-96">
+        <ul className="w-full">
           {resources.map(({ href, text, icon }) => (
             <li key={href} className="my-2">
               <Link

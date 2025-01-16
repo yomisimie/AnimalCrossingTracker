@@ -126,5 +126,11 @@ export default function App() {
 }
 
 export function HydrateFallback() {
-  return <p>Loading...</p>;
+  return (
+    <div className="flex justify-center align-middle py-28">
+      <div className="animate-spin">
+        <i className="icon-dinosaur-bones text-8xl"></i>
+      </div>
+    </div>
+  );
 }
