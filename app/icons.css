@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/icomoon.eot?zl4bf');
+  src:  url('/fonts/icomoon.eot?zl4bf#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?zl4bf') format('truetype'),
+    url('/fonts/icomoon.woff?zl4bf') format('woff'),
+    url('/fonts/icomoon.svg?zl4bf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dinosaur-bones:before {
+  content: "\e90d";
+}
+.icon-cancel:before {
+  content: "\e90b";
+}
+.icon-confirmed:before {
+  content: "\e90c";
+}
+.icon-calendar:before {
+  content: "\e909";
+}
+.icon-stopwatch:before {
+  content: "\e90a";
+}
+.icon-paint-brush:before {
+  content: "\e905";
+}
+.icon-fossil:before {
+  content: "\e906";
+}
+.icon-fishing-pole:before {
+  content: "\e907";
+}
+.icon-bug-net:before {
+  content: "\e908";
+}
+.icon-new-horizons:before {
+  content: "\e901";
+}
+.icon-new-leaf:before {
+  content: "\e902";
+}
+.icon-city-folk:before {
+  content: "\e903";
+}
+.icon-wild-world:before {
+  content: "\e904";
+}
+.icon-bells:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}

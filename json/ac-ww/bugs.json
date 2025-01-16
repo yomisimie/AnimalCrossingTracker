@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "name": "Common butterfly",
+    "price": 80,
+    "location": "Flying near flowers",
+    "weather": "Any except rain",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "16:00"
+      }
+    ],
+    "months": [3, 4, 5, 6, 7, 8, 9, 10],
+    "image": "https://dodo.ac/np/images/7/79/Common_Butterfly_PG_Icon.png"
+  },
+  {
+    "id": 2,
+    "name": "Yellow butterfly",
+    "price": 80,
+    "location": "Flying",
+    "weather": "Any except rain",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "16:00"
+      }
+    ],
+    "months": [3, 4, 5, 6, 7, 8, 9, 10],
+    "image": "https://dodo.ac/np/images/b/be/Yellow_Butterfly_PG_Icon.png"
+  },
+  {
+    "id": 3,
+    "name": "Tiger butterfly",
+    "price": 200,
+    "location": "Flying",
+    "weather": "Any except rain",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "16:00"
+      }
+    ],
+    "months": [4, 5, 6, 7, 8, 9],
+    "image": "https://dodo.ac/np/images/9/9a/Tiger_Butterfly_PG_Icon.png"
+  },
+  {
+    "id": 4,
+    "name": "Purple butterfly",
+    "price": 2000,
+    "location": "Flying around trees",
+    "weather": "Any",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "17:00"
+      }
+    ],
+    "months": [6, 7, 8],
+    "image": "https://dodo.ac/np/images/8/82/Purple_Butterfly_PG_Icon.png"
+  },
+  {
+    "id": 5,
+    "name": "Brown cicada",
+    "price": 200,
+    "location": "On trees",
+    "weather": "Any",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "17:00"
+      }
+    ],
+    "months": [7, 8],
+    "image": "https://dodo.ac/np/images/6/6b/Brown_Cicada_PG_Icon.png"
+  },
+  {
+    "id": 6,
+    "name": "Robust cicada",
+    "price": 300,
+    "location": "On trees",
+    "weather": "Any",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "16:00"
+      }
+    ],
+    "months": [7, 8],
+    "image": "https://dodo.ac/np/images/2/27/Robust_Cicada_PG_Icon.png"
+  },
+  {
+    "id": 7,
+    "name": "Walker cicada",
+    "price": 400,
+    "location": "On trees",
+    "weather": "Any",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "16:00"
+      }
+    ],
+    "months": [7, 8, 9],
+    "image": "https://dodo.ac/np/images/e/e5/Walker_Cicada_PG_Icon.png"
+  },
+  {
+    "id": 8,
+    "name": "Evening cicada",
+    "price": 850,
+    "location": "On trees",
+    "weather": "Any",
+    "time": [
+      {
+        "from": "04:00",
+        "to": "08:00"
+      },
+      {
+        "from": "16:00",
+        "to": "19:00"
+      }
+    ],
+    "months": [7, 8],
+    "image": "https://dodo.ac/np/images/4/40/Evening_Cicada_PG_Icon.png"
+  },
+  {
+    "id": 9,
+    "name": "Red dragonfly",
+    "price": 80,
+    "location": "Flying",
+    "weather": "Any except rain",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "19:00"
+      }
+    ],
+    "months": [9, 10],
+    "image": "https://dodo.ac/np/images/2/2d/Red_Dragonfly_PG_Icon.png"
+  },
+  {
+    "id": 10,
+    "name": "Common dragonfly",
+    "price": 130,
+    "location": "Flying",
+    "weather": "Any except rain",
+    "time": [
+      {
+        "from": "08:00",
+        "to": "17:00"
+      }
+    ],
+    "months": [5, 6, 7],
+    "image": "https://dodo.ac/np/images/b/b4/Common_Dragonfly_PG_Icon.png"
+  }
+]

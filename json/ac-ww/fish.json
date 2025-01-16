@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Crucian carp",
+    "price": 120,
+    "shadowSize": "Small",
+    "location": "River",
+    "time": [
+      {
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "https://dodo.ac/np/images/0/07/Crucian_Carp_PG_Icon.png"
+  },
+  {
+    "id": 2,
+    "name": "Book trout",
+    "price": 150,
+    "shadowSize": "Medium",
+    "location": "Lake",
+    "time": [
+      {
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "https://dodo.ac/np/images/0/0b/Brook_Trout_PG_Icon.png"
+  },
+  {
+    "id": 3,
+    "name": "Carp",
+    "price": 300,
+    "shadowSize": "Large",
+    "location": "River",
+    "time": [
+      {
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "https://dodo.ac/np/images/d/d4/Carp_PG_Icon.png"
+  },
+  {
+    "id": 4,
+    "name": "Koi",
+    "price": 2000,
+    "shadowSize": "Large",
+    "location": "River",
+    "time": [
+      {
+        "from": "16:00",
+        "to": "09:00"
+      }
+    ],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "https://dodo.ac/np/images/9/96/Koi_PG_Icon.png"
+  },
+  {
+    "id": 5,
+    "name": "Barbed steel",
+    "price": 200,
+    "shadowSize": "Large",
+    "location": "River",
+    "time": [
+      {
+        "from": "00:00",
+        "to": "24:00"
+      }
+    ],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "https://dodo.ac/np/images/f/f6/Barbel_Steed_PG_Icon.png"
+  },
+  {
+    "id": 6,
+    "name": "Dace",
+    "price": 200,
+    "shadowSize": "Medium",
+    "location": "River",
+    "time": [
+      {
+        "from": "16:00",
+        "to": "09:00"
+      }
+    ],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "image": "https://dodo.ac/np/images/c/cc/Dace_PG_Icon.png"
+  },
+  {
+    "id": 7,
+    "name": "Catfish",
+    "price": 200,
+    "shadowSize": "Large",
+    "location": "River",
+    "time": [
+      {
+        "from": "16:00",
+        "to": "09:00"
+      }
+    ],
+    "months": [5, 6, 7, 8, 9, 10],
+    "image": "https://dodo.ac/np/images/7/75/Catfish_PG_Icon.png"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Tricera skull",
+    "price": 5500,
+    "group": "Triceratops",
+    "score": 1000,
+    "size": "2x2",
+    "image": "https://dodo.ac/np/images/thumb/3/3a/Tricera_Skull_PG_Model.png/64px-Tricera_Skull_PG_Model.png"
+  },
+  {
+    "id": 2,
+    "name": "Tricera torso",
+    "price": 5000,
+    "group": "Triceratops",
+    "score": 1000,
+    "size": "2x2",
+    "image": "https://dodo.ac/np/images/thumb/8/8c/Tricera_Torso_PG_Model.png/64px-Tricera_Torso_PG_Model.png"
+  },
+  {
+    "id": 3,
+    "name": "Tricera tail",
+    "price": 4500,
+    "group": "Triceratops",
+    "score": 1000,
+    "size": "2x2",
+    "image": "https://dodo.ac/np/images/thumb/e/eb/Tricera_Tail_PG_Model.png/64px-Tricera_Tail_PG_Model.png"
+  },
+  {
+    "id": 4,
+    "name": "T-rex skull",
+    "price": 6000,
+    "group": "Tyrannosaurus",
+    "score": 1000,
+    "size": "2x2",
+    "image": "https://dodo.ac/np/images/thumb/2/29/T-Rex_Skull_PG_Model.png/64px-T-Rex_Skull_PG_Model.png"
+  },
+  {
+    "id": 5,
+    "name": "T-rex torso",
+    "price": 5500,
+    "group": "Tyrannosaurus",
+    "score": 1000,
+    "size": "2x2",
+    "image": "https://dodo.ac/np/images/thumb/7/70/T-Rex_Torso_PG_Model.png/64px-T-Rex_Torso_PG_Model.png"
+  },
+  {
+    "id": 6,
+    "name": "T-rex tail",
+    "price": 5000,
+    "group": "Tyrannosaurus",
+    "score": 1000,
+    "size": "2x2",
+    "image": "https://dodo.ac/np/images/thumb/d/d9/T-Rex_Tail_PG_Model.png/64px-T-Rex_Tail_PG_Model.png"
+  }
+]

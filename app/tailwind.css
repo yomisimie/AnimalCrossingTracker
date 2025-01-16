@@ -1,12 +1,27 @@
+@import 'icons.css';
+@font-face {
+  font-family: 'FinkHeavy';
+  src: url('/fonts/FinkHeavy.woff2') format('woff2'),
+      url('/fonts/FinkHeavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* html,
 body {
   @apply bg-white dark:bg-gray-950;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+} */
+
+@layer components {
+  .pixelated {
+    image-rendering: pixelated
   }
 }
