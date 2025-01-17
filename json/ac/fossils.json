@@ -2,55 +2,226 @@
   {
     "id": 1,
     "name": "Tricera skull",
+    "image": "https://dodo.ac/np/images/thumb/3/3a/Tricera_Skull_PG_Model.png/64px-Tricera_Skull_PG_Model.png",
     "price": 5500,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/3/3a/Tricera_Skull_PG_Model.png/64px-Tricera_Skull_PG_Model.png"
+    "size": "2.0 x 2.0"
   },
   {
     "id": 2,
     "name": "Tricera torso",
+    "image": "https://dodo.ac/np/images/thumb/8/8c/Tricera_Torso_PG_Model.png/64px-Tricera_Torso_PG_Model.png",
     "price": 5000,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/8/8c/Tricera_Torso_PG_Model.png/64px-Tricera_Torso_PG_Model.png"
+    "size": "2.0 x 2.0"
   },
   {
     "id": 3,
     "name": "Tricera tail",
+    "image": "https://dodo.ac/np/images/thumb/e/eb/Tricera_Tail_PG_Model.png/64px-Tricera_Tail_PG_Model.png",
     "price": 4500,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/e/eb/Tricera_Tail_PG_Model.png/64px-Tricera_Tail_PG_Model.png"
+    "size": "2.0 x 2.0"
   },
   {
     "id": 4,
     "name": "T-rex skull",
+    "image": "https://dodo.ac/np/images/thumb/2/29/T-Rex_Skull_PG_Model.png/64px-T-Rex_Skull_PG_Model.png",
     "price": 6000,
     "group": "Tyrannosaurus",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/2/29/T-Rex_Skull_PG_Model.png/64px-T-Rex_Skull_PG_Model.png"
+    "size": "2.0 x 2.0"
   },
   {
     "id": 5,
     "name": "T-rex torso",
+    "image": "https://dodo.ac/np/images/thumb/7/70/T-Rex_Torso_PG_Model.png/64px-T-Rex_Torso_PG_Model.png",
     "price": 5500,
     "group": "Tyrannosaurus",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/7/70/T-Rex_Torso_PG_Model.png/64px-T-Rex_Torso_PG_Model.png"
+    "size": "2.0 x 2.0"
   },
   {
     "id": 6,
     "name": "T-rex tail",
+    "image": "https://dodo.ac/np/images/thumb/d/d9/T-Rex_Tail_PG_Model.png/64px-T-Rex_Tail_PG_Model.png",
     "price": 5000,
     "group": "Tyrannosaurus",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/d/d9/T-Rex_Tail_PG_Model.png/64px-T-Rex_Tail_PG_Model.png"
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 7,
+    "name": "Apato skull",
+    "image": "https://dodo.ac/np/images/thumb/2/25/Apato_Skull_PG_Model.png/64px-Apato_Skull_PG_Model.png",
+    "price": 5000,
+    "group": "Apatosaurus",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 8,
+    "name": "Apato torso",
+    "image": "https://dodo.ac/np/images/thumb/d/de/Apato_Torso_PG_Model.png/64px-Apato_Torso_PG_Model.png",
+    "price": 4500,
+    "group": "Apatosaurus",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 9,
+    "name": "Apato tail",
+    "image": "https://dodo.ac/np/images/thumb/4/4e/Apato_Tail_PG_Model.png/64px-Apato_Tail_PG_Model.png",
+    "price": 4000,
+    "group": "Apatosaurus",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 10,
+    "name": "Stego skull",
+    "image": "https://dodo.ac/np/images/thumb/0/03/Stego_Skull_PG_Model.png/64px-Stego_Skull_PG_Model.png",
+    "price": 5000,
+    "group": "Stegosaurus",
+    "score": 1000,
+    "size": "2.0 x 1.0"
+  },
+  {
+    "id": 11,
+    "name": "Stego torso",
+    "image": "https://dodo.ac/np/images/thumb/2/2c/Stego_Torso_PG_Model.png/64px-Stego_Torso_PG_Model.png",
+    "price": 4500,
+    "group": "Stegosaurus",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 12,
+    "name": "Stego tail",
+    "image": "https://dodo.ac/np/images/thumb/1/1f/Stego_Tail_PG_Model.png/64px-Stego_Tail_PG_Model.png",
+    "price": 4000,
+    "group": "Stegosaurus",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 13,
+    "name": "Ptera skull",
+    "image": "https://dodo.ac/np/images/thumb/7/7d/Ptera_Skull_PG_Model.png/64px-Ptera_Skull_PG_Model.png",
+    "price": 4000,
+    "group": "Pteranodon",
+    "score": 1000,
+    "size": "2.0 x 1.0"
+  },
+  {
+    "id": 14,
+    "name": "Ptera right wing",
+    "image": "https://dodo.ac/np/images/thumb/6/68/Ptera_Right_Wing_PG_Model.png/64px-Ptera_Right_Wing_PG_Model.png",
+    "price": 4500,
+    "group": "Pteranodon",
+    "score": 1000,
+    "size": "2.0 x 1.0"
+  },
+  {
+    "id": 15,
+    "name": "Ptera left wing",
+    "image": "https://dodo.ac/np/images/thumb/7/7a/Ptera_Left_Wing_PG_Model.png/64px-Ptera_Left_Wing_PG_Model.png",
+    "price": 4500,
+    "group": "Pteranodon",
+    "score": 1000,
+    "size": "2.0 x 1.0"
+  },
+  {
+    "id": 16,
+    "name": "Plesio skull",
+    "image": "https://dodo.ac/np/images/thumb/c/cf/Plesio_Skull_PG_Model.png/64px-Plesio_Skull_PG_Model.png",
+    "price": 4000,
+    "group": "Plesiosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 17,
+    "name": "Plesio neck",
+    "image": "https://dodo.ac/np/images/thumb/d/d7/Plesio_Neck_PG_Model.png/64px-Plesio_Neck_PG_Model.png",
+    "price": 4500,
+    "group": "Plesiosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 18,
+    "name": "Plesio torso",
+    "image": "https://dodo.ac/np/images/thumb/4/43/Plesio_Torso_PG_Model.png/64px-Plesio_Torso_PG_Model.png",
+    "price": 4500,
+    "group": "Plesiosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 19,
+    "name": "Mammoth skull",
+    "image": "https://dodo.ac/np/images/thumb/4/45/Mammoth_Skull_PG_Model.png/64px-Mammoth_Skull_PG_Model.png",
+    "price": 3000,
+    "group": "Mammoth",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 20,
+    "name": "Mammoth torso",
+    "image": "https://dodo.ac/np/images/thumb/d/d9/Mammoth_Torso_PG_Model.png/64px-Mammoth_Torso_PG_Model.png",
+    "price": 2500,
+    "group": "Mammoth",
+    "score": 1000,
+    "size": "2.0 x 2.0"
+  },
+  {
+    "id": 21,
+    "name": "Amber",
+    "image": "https://dodo.ac/np/images/thumb/e/e7/Amber_PG_Model.png/64px-Amber_PG_Model.png",
+    "price": 1200,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0"
+  },
+  {
+    "id": 22,
+    "name": "Dinosaur track",
+    "image": "https://dodo.ac/np/images/thumb/3/33/Dinosaur_Track_PG_Model.png/64px-Dinosaur_Track_PG_Model.png",
+    "price": 1000,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0"
+  },
+  {
+    "id": 23,
+    "name": "Ammonite",
+    "image": "https://dodo.ac/np/images/thumb/9/96/Ammonite_PG_Model.png/64px-Ammonite_PG_Model.png",
+    "price": 1100,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0"
+  },
+  {
+    "id": 24,
+    "name": "Dinosaur egg",
+    "image": "https://dodo.ac/np/images/thumb/f/f9/Dinosaur_Egg_PG_Model.png/64px-Dinosaur_Egg_PG_Model.png",
+    "price": 1400,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0"
+  },
+  {
+    "id": 25,
+    "name": "Trilobite",
+    "image": "https://dodo.ac/np/images/thumb/f/fe/Trilobite_PG_Model.png/64px-Trilobite_PG_Model.png",
+    "price": 1300,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0"
   }
 ]

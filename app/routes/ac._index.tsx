@@ -4,7 +4,7 @@ import { Link } from "@remix-run/react";
 export const meta: MetaFunction = () => {
   return [
     { title: "Animal Crossing (GCN)" },
-    { name: "description", content: "Track your progress" },
+    { name: "description", content: "Track your progress!" },
   ];
 };
 

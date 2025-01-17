@@ -9,7 +9,7 @@ import Bug from "~/types/Bug";
 export const meta: MetaFunction = () => {
   return [
     { title: "Bugs (GCN)" },
-    { name: "description", content: "Track your progress" },
+    { name: "description", content: "Track your progress!" },
   ];
 };
 
@@ -160,6 +160,19 @@ export default function ACBugs() {
           >
             <i className="icon-cancel"></i>
           </button>
+          <button
+            type="button"
+            className="btn btn-info"
+            onClick={() => {
+              const date = new Date();
+              setSelectedTime(date.getHours() + ":00");
+              setSelectedMonths([new Date().getMonth() + 1]);
+            }}
+            title="Now"
+            aria-description="Now"
+          >
+            Now
+          </button>
         </div>
         <a
           className="btn btn-error self-end"
@@ -188,11 +201,11 @@ export default function ACBugs() {
           {data.map((bug: Bug) => (
             <tr key={bug.id} className="hover">
               <td>{bug.name}</td>
-              <td className="text-center">
+              <td className="text-center min-w-16">
                 <img
                   src={bug.image}
                   alt={bug.name}
-                  className="pixelated inline-block w-12 h-12"
+                  className="pixelated inline-block w-12 h-auto"
                 />
               </td>
               <td>{bug.price}</td>

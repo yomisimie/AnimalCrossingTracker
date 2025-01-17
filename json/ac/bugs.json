@@ -2,155 +2,404 @@
   {
     "id": 1,
     "name": "Common butterfly",
+    "image": "https://dodo.ac/np/images/7/79/Common_Butterfly_PG_Icon.png",
     "price": 80,
-    "location": "Flying near flowers",
+    "location": "Flying",
     "weather": "Any except rain",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "16:00"
-      }
-    ],
-    "months": [3, 4, 5, 6, 7, 8, 9, 10],
-    "image": "https://dodo.ac/np/images/7/79/Common_Butterfly_PG_Icon.png"
+    "time": [{ "from": "08:00", "to": "16:00" }],
+    "months": [3, 4, 5, 6, 7, 8, 9, 10]
   },
   {
     "id": 2,
     "name": "Yellow butterfly",
+    "image": "https://dodo.ac/np/images/b/be/Yellow_Butterfly_PG_Icon.png",
     "price": 80,
     "location": "Flying",
     "weather": "Any except rain",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "16:00"
-      }
-    ],
-    "months": [3, 4, 5, 6, 7, 8, 9, 10],
-    "image": "https://dodo.ac/np/images/b/be/Yellow_Butterfly_PG_Icon.png"
+    "time": [{ "from": "08:00", "to": "16:00" }],
+    "months": [3, 4, 5, 6, 7, 8, 9, 10]
   },
   {
     "id": 3,
     "name": "Tiger butterfly",
+    "image": "https://dodo.ac/np/images/9/9a/Tiger_Butterfly_PG_Icon.png",
     "price": 200,
     "location": "Flying",
     "weather": "Any except rain",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "16:00"
-      }
-    ],
-    "months": [4, 5, 6, 7, 8, 9],
-    "image": "https://dodo.ac/np/images/9/9a/Tiger_Butterfly_PG_Icon.png"
+    "time": [{ "from": "08:00", "to": "16:00" }],
+    "months": [4, 5, 6, 7, 8, 9]
   },
   {
     "id": 4,
     "name": "Purple butterfly",
+    "image": "https://dodo.ac/np/images/8/82/Purple_Butterfly_PG_Icon.png",
     "price": 2000,
     "location": "Flying around trees",
-    "weather": "Any",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "17:00"
-      }
-    ],
-    "months": [6, 7, 8],
-    "image": "https://dodo.ac/np/images/8/82/Purple_Butterfly_PG_Icon.png"
+    "weather": "Any weather",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [6, 7, 8]
   },
   {
     "id": 5,
     "name": "Brown cicada",
+    "image": "https://dodo.ac/np/images/6/6b/Brown_Cicada_PG_Icon.png",
     "price": 200,
     "location": "On trees",
-    "weather": "Any",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "17:00"
-      }
-    ],
-    "months": [7, 8],
-    "image": "https://dodo.ac/np/images/6/6b/Brown_Cicada_PG_Icon.png"
+    "weather": "Any weather",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [7, 8]
   },
   {
     "id": 6,
     "name": "Robust cicada",
+    "image": "https://dodo.ac/np/images/2/27/Robust_Cicada_PG_Icon.png",
     "price": 300,
     "location": "On trees",
-    "weather": "Any",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "16:00"
-      }
-    ],
-    "months": [7, 8],
-    "image": "https://dodo.ac/np/images/2/27/Robust_Cicada_PG_Icon.png"
+    "weather": "Any weather",
+    "time": [{ "from": "08:00", "to": "16:00" }],
+    "months": [7, 8]
   },
   {
     "id": 7,
     "name": "Walker cicada",
+    "image": "https://dodo.ac/np/images/e/e5/Walker_Cicada_PG_Icon.png",
     "price": 400,
     "location": "On trees",
-    "weather": "Any",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "16:00"
-      }
-    ],
-    "months": [7, 8, 9],
-    "image": "https://dodo.ac/np/images/e/e5/Walker_Cicada_PG_Icon.png"
+    "weather": "Any weather",
+    "time": [{ "from": "08:00", "to": "16:00" }],
+    "months": [7, 8]
   },
   {
     "id": 8,
     "name": "Evening cicada",
+    "image": "https://dodo.ac/np/images/4/40/Evening_Cicada_PG_Icon.png",
     "price": 850,
     "location": "On trees",
-    "weather": "Any",
+    "weather": "Any weather",
     "time": [
-      {
-        "from": "04:00",
-        "to": "08:00"
-      },
-      {
-        "from": "16:00",
-        "to": "19:00"
-      }
+      { "from": "04:00", "to": "08:00" },
+      { "from": "16:00", "to": "19:00" }
     ],
-    "months": [7, 8],
-    "image": "https://dodo.ac/np/images/4/40/Evening_Cicada_PG_Icon.png"
+    "months": [7, 8]
   },
   {
     "id": 9,
     "name": "Red dragonfly",
+    "image": "https://dodo.ac/np/images/2/2d/Red_Dragonfly_PG_Icon.png",
     "price": 80,
     "location": "Flying",
     "weather": "Any except rain",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "19:00"
-      }
-    ],
-    "months": [9, 10],
-    "image": "https://dodo.ac/np/images/2/2d/Red_Dragonfly_PG_Icon.png"
+    "time": [{ "from": "08:00", "to": "19:00" }],
+    "months": [9, 10]
   },
   {
     "id": 10,
     "name": "Common dragonfly",
+    "image": "https://dodo.ac/np/images/b/b4/Common_Dragonfly_PG_Icon.png",
     "price": 130,
     "location": "Flying",
     "weather": "Any except rain",
-    "time": [
-      {
-        "from": "08:00",
-        "to": "17:00"
-      }
-    ],
-    "months": [5, 6, 7],
-    "image": "https://dodo.ac/np/images/b/b4/Common_Dragonfly_PG_Icon.png"
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [5, 6, 7]
+  },
+  {
+    "id": 11,
+    "name": "Darner dragonfly",
+    "image": "https://dodo.ac/np/images/3/3e/Darner_Dragonfly_PG_Icon.png",
+    "price": 200,
+    "location": "Flying",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [6, 7, 8]
+  },
+  {
+    "id": 12,
+    "name": "Banded dragonfly",
+    "image": "https://dodo.ac/np/images/c/cd/Banded_Dragonfly_PG_Icon.png",
+    "price": 4500,
+    "location": "Flying",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 13,
+    "name": "Cricket",
+    "image": "https://dodo.ac/np/images/3/39/Cricket_PG_Icon.png",
+    "price": 130,
+    "location": "In bushes",
+    "weather": "Any except rain",
+    "time": [{ "from": "17:00", "to": "08:00" }],
+    "months": [9, 10, 11]
+  },
+  {
+    "id": 14,
+    "name": "Grasshopper",
+    "image": "https://dodo.ac/np/images/a/a3/Grasshopper_PG_Icon.png",
+    "price": 130,
+    "location": "In bushes",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [8, 9]
+  },
+  {
+    "id": 15,
+    "name": "Pine cricket",
+    "image": "https://dodo.ac/np/images/4/43/Pine_Cricket_PG_Icon.png",
+    "price": 100,
+    "location": "In bushes",
+    "weather": "Any except rain",
+    "time": [{ "from": "17:00", "to": "08:00" }],
+    "months": [9, 10]
+  },
+  {
+    "id": 16,
+    "name": "Bell cricket",
+    "image": "https://dodo.ac/np/images/5/57/Bell_Cricket_PG_Icon.png",
+    "price": 430,
+    "location": "In bushes",
+    "weather": "Any except rain",
+    "time": [{ "from": "17:00", "to": "08:00" }],
+    "months": [9, 10]
+  },
+  {
+    "id": 17,
+    "name": "Ladybug",
+    "image": "https://dodo.ac/np/images/8/83/Ladybug_PG_Icon.png",
+    "price": 200,
+    "location": "On flowers",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [3, 4, 5, 6, 7, 10]
+  },
+  {
+    "id": 18,
+    "name": "Spotted ladybug",
+    "image": "https://dodo.ac/np/images/8/82/Spotted_Ladybug_PG_Icon.png",
+    "price": 200,
+    "location": "On flowers",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [3, 4, 5, 6, 7, 10]
+  },
+  {
+    "id": 19,
+    "name": "Mantis",
+    "image": "https://dodo.ac/np/images/2/2d/Mantis_PG_Icon.png",
+    "price": 430,
+    "location": "On flowers",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [3, 4, 5, 6, 7, 8, 9, 10]
+  },
+  {
+    "id": 20,
+    "name": "Long locust",
+    "image": "https://dodo.ac/np/images/9/9c/Long_Locust_PG_Icon.png",
+    "price": 200,
+    "location": "In bushes",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [8, 9, 10, 11]
+  },
+  {
+    "id": 21,
+    "name": "Migratory locust",
+    "image": "https://dodo.ac/np/images/8/88/Migratory_Locust_PG_Icon.png",
+    "price": 1350,
+    "location": "On the ground",
+    "weather": "Any except rain",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [9, 10, 11]
+  },
+  {
+    "id": 22,
+    "name": "Cockroach",
+    "image": "https://dodo.ac/np/images/e/e0/Cockroach_PG_Icon.png",
+    "price": 5,
+    "location": "On trees, On flowers, On spoiled turnips",
+    "weather": "On trees: Any weather, On flowers/spoiled turnips: Any except rain",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "id": 23,
+    "name": "Bee",
+    "image": "https://dodo.ac/np/images/7/7b/Bee_PG_Icon.png",
+    "price": 4500,
+    "location": "In trees",
+    "weather": "Any weather",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "id": 24,
+    "name": "Firefly",
+    "image": "https://dodo.ac/np/images/9/96/Firefly_PG_Icon.png",
+    "price": 250,
+    "location": "Flying near water",
+    "weather": "Any except rain",
+    "time": [{ "from": "19:00", "to": "04:00" }],
+    "months": [6]
+  },
+  {
+    "id": 25,
+    "name": "Drone beetle",
+    "image": "https://dodo.ac/np/images/9/9f/Drone_Beetle_PG_Icon.png",
+    "price": 80,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 26,
+    "name": "Longhorn beetle",
+    "image": "https://dodo.ac/np/images/1/1e/Longhorn_Beetle_PG_Icon.png",
+    "price": 200,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "08:00", "to": "17:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 27,
+    "name": "Jewel beetle",
+    "image": "https://dodo.ac/np/images/e/ec/Jewel_Beetle_PG_Icon.png",
+    "price": 3000,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "08:00", "to": "16:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 28,
+    "name": "Dynastid beetle",
+    "image": "https://dodo.ac/np/images/f/f3/Dynastid_Beetle_PG_Icon.png",
+    "price": 1350,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "19:00", "to": "08:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 29,
+    "name": "Flat stag beetle",
+    "image": "https://dodo.ac/np/images/3/38/Flat_Stag_Beetle_PG_Icon.png",
+    "price": 2000,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "19:00", "to": "08:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 30,
+    "name": "Saw stag beetle",
+    "image": "https://dodo.ac/np/images/1/12/Saw_Stag_Beetle_PG_Icon.png",
+    "price": 2000,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "19:00", "to": "08:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 31,
+    "name": "Mountain beetle",
+    "image": "https://dodo.ac/np/images/4/46/Mountain_Beetle_PG_Icon.png",
+    "price": 2000,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "19:00", "to": "08:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 32,
+    "name": "Giant beetle",
+    "image": "https://dodo.ac/np/images/9/92/Giant_Beetle_PG_Icon.png",
+    "price": 10000,
+    "location": "On trees",
+    "weather": "Any weather",
+    "time": [{ "from": "23:00", "to": "08:00" }],
+    "months": [7, 8]
+  },
+  {
+    "id": 33,
+    "name": "Pond skater",
+    "image": "https://dodo.ac/np/images/9/9d/Pond_Skater_PG_Icon.png",
+    "price": 130,
+    "location": "On the lake, On ponds",
+    "weather": "Any weather",
+    "time": [{ "from": "08:00", "to": "19:00" }],
+    "months": [6, 7, 8, 9]
+  },
+  {
+    "id": 34,
+    "name": "Ant",
+    "image": "https://dodo.ac/np/images/5/5f/Ant_PG_Icon.png",
+    "price": 80,
+    "location": "On candy, On spoiled turnips",
+    "weather": "Any except rain",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "id": 35,
+    "name": "Pill bug",
+    "image": "https://dodo.ac/np/images/9/90/Pill_Bug_PG_Icon.png",
+    "price": 250,
+    "location": "Under rocks",
+    "weather": "Any weather",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  {
+    "id": 36,
+    "name": "Mosquito",
+    "image": "https://dodo.ac/np/images/4/42/Mosquito_PG_Icon.png",
+    "price": 130,
+    "location": "Flying",
+    "weather": "Any weather",
+    "time": [{ "from": "17:00", "to": "23:00" }],
+    "months": [6, 7, 8, 9]
+  },
+  {
+    "id": 37,
+    "name": "Mole cricket",
+    "image": "https://dodo.ac/np/images/d/d1/Mole_Cricket_PG_Icon.png",
+    "price": 200,
+    "location": "Underground",
+    "weather": "Any weather",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [1, 2, 3, 4, 5, 11, 12]
+  },
+  {
+    "id": 38,
+    "name": "Spider",
+    "image": "https://dodo.ac/np/images/d/d4/Spider_PG_Icon.png",
+    "price": 300,
+    "location": "In trees",
+    "weather": "Any weather",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [4, 5, 6, 7, 8, 9]
+  },
+  {
+    "id": 39,
+    "name": "Snail",
+    "image": "https://dodo.ac/np/images/1/1f/Snail_PG_Icon.png",
+    "price": 250,
+    "location": "On flowers",
+    "weather": "Rain only",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [4, 5, 6, 7, 8, 9]
+  },
+  {
+    "id": 40,
+    "name": "Bagworm",
+    "image": "https://dodo.ac/np/images/f/ff/Bagworm_PG_Icon.png",
+    "price": 250,
+    "location": "In trees",
+    "weather": "Any weather",
+    "time": [{ "from": "00:00", "to": "24:00" }],
+    "months": [1, 2, 3, 10, 11, 12]
   }
 ]
