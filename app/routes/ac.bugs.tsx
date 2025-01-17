@@ -75,7 +75,7 @@ export default function ACBugs() {
               tabIndex={0}
               className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto"
             >
-              {Array.from({ length: 24 }, (_, i) => (
+              {Array.from({ length: 26 }, (_, i) => (
                 <li key={i}>
                   <input
                     type="radio"
@@ -183,97 +183,121 @@ export default function ACBugs() {
           <i className="icon-cancel"></i>Clear data
         </a>
       </div>
-      <table className="table table-sm text-center w-full my-4">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Image</th>
-            <th>Price</th>
-            <th>Location</th>
-            <th>Weather</th>
-            <th>Time</th>
-            <th>Months</th>
-            <th>Caught</th>
-            <th>Donated</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((bug: Bug) => (
-            <tr key={bug.id} className="hover">
-              <td>{bug.name}</td>
-              <td className="text-center min-w-16">
-                <img
-                  src={bug.image}
-                  alt={bug.name}
-                  className="pixelated inline-block w-12 h-auto"
-                />
-              </td>
-              <td>{bug.price}</td>
-              <td>{bug.location}</td>
-              <td>{bug.weather}</td>
-              <td>{bug.time.map((t) => `${t.from} - ${t.to}`).join("; ")}</td>
-              <td>
-                <ul className="flex gap-1">
-                  {months.map((month) => (
-                    <li
-                      key={month.name}
-                      className={`badge  ${
-                        bug.months.includes(month.id)
-                          ? "badge-primary"
-                          : "badge-neutral"
-                      }`}
-                    >
-                      {month.shortName}
-                    </li>
-                  ))}
-                </ul>
-              </td>
-              <td>
-                <div className="form-control">
-                  <label className="label cursor-pointer">
-                    <span className="label-text me-2 md:hidden">Caught</span>
-                    <input
-                      type="checkbox"
-                      className="toggle toggle-success"
-                      checked={caughtBugs.includes(bug.id)}
-                      onChange={(e) => {
-                        if (e.target.checked) {
-                          setCaughtBugs([...caughtBugs, bug.id]);
-                        } else {
-                          setCaughtBugs(
-                            caughtBugs.filter((id) => id !== bug.id)
-                          );
-                        }
-                      }}
-                    />
-                  </label>
-                </div>
-              </td>
-              <td>
-                <div className="form-control">
-                  <label className="label cursor-pointer">
-                    <span className="label-text me-2 md:hidden">Donated</span>
-                    <input
-                      type="checkbox"
-                      className="toggle toggle-success"
-                      checked={donatedBugs.includes(bug.id)}
-                      onChange={(e) => {
-                        if (e.target.checked) {
-                          setDonatedBugs([...donatedBugs, bug.id]);
-                        } else {
-                          setDonatedBugs(
-                            donatedBugs.filter((id) => id !== bug.id)
-                          );
-                        }
-                      }}
-                    />
-                  </label>
-                </div>
-              </td>
+      {data.length === 0 ? (
+        <div className="text-center py-4">
+          <div className="py-12 flex gap-4 justify-center align-middle">
+            <img
+              src="https://dodo.ac/np/images/1/1b/Blathers_NH.png"
+              alt="Blathers"
+              className="max-w-48"
+            />
+            <div className="self-center">
+              <p>Hooooo... WHO?! Hoo!</p>
+              <p>I beg your pardon!</p>
+              <p>We seem to have no bugs for the filters (fortunately).</p>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <table className="table table-sm text-center w-full my-4">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Price</th>
+              <th>Location</th>
+              <th>Weather</th>
+              <th>Time</th>
+              <th>Months</th>
+              <th>Caught</th>
+              <th>Donated</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map((bug: Bug) => (
+              <tr key={bug.id} className="hover">
+                <td>{bug.name}</td>
+                <td className="text-center min-w-16">
+                  <img
+                    src={bug.image}
+                    alt={bug.name}
+                    className="pixelated inline-block w-12 h-auto"
+                  />
+                </td>
+                <td>{bug.price}</td>
+                <td className="max-w-52">{bug.location}</td>
+                <td className="max-w-52">{bug.weather}</td>
+                <td>{bug.time.map((t) => `${t.from} - ${t.to}`).join("; ")}</td>
+                <td>
+                  <ul className="flex gap-1">
+                    {months.map((month) => (
+                      <li
+                        key={month.name}
+                        className="tooltip"
+                        data-tip={month.name}
+                      >
+                        <span
+                          className={`badge cursor-pointer  ${
+                            bug.months.includes(month.id)
+                              ? "badge-primary"
+                              : "badge-neutral"
+                          }`}
+                          aria-label={month.name}
+                          onClick={() => setSelectedMonths([month.id])}
+                        >
+                          {month.letter}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </td>
+                <td>
+                  <div className="form-control">
+                    <label className="label cursor-pointer">
+                      <span className="label-text me-2 md:hidden">Caught</span>
+                      <input
+                        type="checkbox"
+                        className="toggle toggle-success"
+                        checked={caughtBugs.includes(bug.id)}
+                        onChange={(e) => {
+                          if (e.target.checked) {
+                            setCaughtBugs([...caughtBugs, bug.id]);
+                          } else {
+                            setCaughtBugs(
+                              caughtBugs.filter((id) => id !== bug.id)
+                            );
+                          }
+                        }}
+                      />
+                    </label>
+                  </div>
+                </td>
+                <td>
+                  <div className="form-control">
+                    <label className="label cursor-pointer">
+                      <span className="label-text me-2 md:hidden">Donated</span>
+                      <input
+                        type="checkbox"
+                        className="toggle toggle-success"
+                        checked={donatedBugs.includes(bug.id)}
+                        onChange={(e) => {
+                          if (e.target.checked) {
+                            setDonatedBugs([...donatedBugs, bug.id]);
+                          } else {
+                            setDonatedBugs(
+                              donatedBugs.filter((id) => id !== bug.id)
+                            );
+                          }
+                        }}
+                      />
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
       <div className="modal" role="dialog" id="clear_data_modal">
         <div className="modal-box">
           <h3 className="text-lg font-bold">Clear saved data?</h3>
