@@ -46,7 +46,7 @@ export default function ACBugs() {
   }, [selectedTime, selectedMonths]);
 
   return (
-    <div>
+    <>
       <div className="flex py-4 border-neutral-500 border-opacity-25 border-b-2">
         <Link to="/ac" className="btn btn-primary">
           <i className="icon-arrow-left"></i>
@@ -304,8 +304,9 @@ export default function ACBugs() {
           <p className="py-4">This will delete all the saved data</p>
           <div className="modal-action">
             <a
+              href="#"
               className="btn btn-error"
-              onClick={() => {
+              onClick={(e) => {
                 console.log("Clearing data");
                 removeCaughtBugs();
                 removeDonatedBugs();
@@ -313,10 +314,12 @@ export default function ACBugs() {
             >
               Yes
             </a>
-            <a className="btn btn-info">No</a>
+            <a href="#" className="btn btn-info">
+              No
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
