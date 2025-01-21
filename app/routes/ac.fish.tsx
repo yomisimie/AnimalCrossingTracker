@@ -1,42 +1,42 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import bugs from "json/ac/bugs.json";
+import fish from "json/ac/fish.json";
 import months from "json/months.json";
 import { useEffect, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
-import Bug from "~/types/Bug";
+import Fish from "~/types/Fish";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Bugs (GCN)" },
+    { title: "Fish (GCN)" },
     { name: "description", content: "Track your progress!" },
   ];
 };
 
-export default function ACBugs() {
-  const [data, setData] = useState<Bug[]>(bugs);
+export default function ACFish() {
+  const [data, setData] = useState<Fish[]>(fish);
   const [selectedTime, setSelectedTime] = useState<number | null>(null);
   const [selectedMonths, setSelectedMonths] = useState<number[]>([]);
-  const [caughtBugs, setCaughtBugs, removeCaughtBugs] = useLocalStorage<
+  const [caughtFish, setCaughtFish, removeCaughtFish] = useLocalStorage<
     number[]
-  >("AC-caughtBugs", []);
-  const [donatedBugs, setDonatedBugs, removeDonatedBugs] = useLocalStorage<
+  >("AC-caughtFish", []);
+  const [donatedFish, setDonatedFish, removeDonatedFish] = useLocalStorage<
     number[]
-  >("AC-donatedBugs", []);
+  >("AC-donatedFish", []);
 
-  // Filter bugs based on selected time and months
+  // Filter fish based on selected time and months
   useEffect(() => {
-    let filteredData = bugs;
+    let filteredData = fish;
 
     if (selectedMonths.length > 0) {
-      filteredData = filteredData.filter((bug: Bug) =>
-        selectedMonths.some((month) => bug.months.includes(month))
+      filteredData = filteredData.filter((fish: Fish) =>
+        selectedMonths.some((month) => fish.months.includes(month))
       );
     }
 
-    if (selectedTime) {
-      filteredData = filteredData.filter((bug: Bug) => {
-        return bug.time.some((t) => {
+    if (selectedTime !== null) {
+      filteredData = filteredData.filter((fish: Fish) => {
+        return fish.time.some((t) => {
           if (t.from > t.to) {
             return selectedTime >= t.from || selectedTime <= t.to;
           }
@@ -55,7 +55,7 @@ export default function ACBugs() {
           <i className="icon-arrow-left"></i>
         </Link>
         <h1 className="mx-auto text-center text-3xl font-[FinkHeavy] text-primary self-center">
-          Bugs (GCN)
+          Fish (GCN)
         </h1>
       </div>
       <div className="flex justify-between gap-2 border-neutral-500 border-opacity-25 border-b-2 py-4">
@@ -208,7 +208,7 @@ export default function ACBugs() {
               <th>Image</th>
               <th>Price</th>
               <th>Location</th>
-              <th>Weather</th>
+              <th>Shadow</th>
               <th>Time</th>
               <th>Months</th>
               <th>Caught</th>
@@ -216,22 +216,28 @@ export default function ACBugs() {
             </tr>
           </thead>
           <tbody>
-            {data.map((bug: Bug) => (
-              <tr key={bug.id} className="hover">
-                <td>{bug.id}</td>
-                <td>{bug.name}</td>
+            {data.map((fish: Fish) => (
+              <tr key={fish.id} className="hover">
+                <td>{fish.id}</td>
+                <td>{fish.name}</td>
                 <td className="text-center min-w-16">
                   <img
-                    src={bug.image}
-                    alt={bug.name}
+                    src={fish.image}
+                    alt={fish.name}
                     className="pixelated inline-block w-12 h-auto"
                   />
                 </td>
-                <td>{bug.price}</td>
-                <td className="max-w-52">{bug.location}</td>
-                <td className="max-w-52">{bug.weather}</td>
+                <td className="flex gap-1 justify-center items-center">
+                  <img
+                    src="https://dodo.ac/np/images/thumb/4/49/99k_Bells_NH_Inv_Icon_cropped.png/15px-99k_Bells_NH_Inv_Icon_cropped.png"
+                    alt="Bells"
+                  />
+                  {fish.price}
+                </td>
+                <td className="max-w-52">{fish.location}</td>
+                <td className="max-w-52">{fish.shadow}</td>
                 <td>
-                  {bug.time
+                  {fish.time
                     .map(
                       (t) =>
                         `${t.from.toString().padStart(2, "0")}:00 - ${t.to
@@ -250,7 +256,7 @@ export default function ACBugs() {
                       >
                         <span
                           className={`badge cursor-pointer  ${
-                            bug.months.includes(month.id)
+                            fish.months.includes(month.id)
                               ? "badge-primary"
                               : "badge-neutral"
                           }`}
@@ -270,13 +276,13 @@ export default function ACBugs() {
                       <input
                         type="checkbox"
                         className="toggle toggle-success"
-                        checked={caughtBugs.includes(bug.id)}
+                        checked={caughtFish.includes(fish.id)}
                         onChange={(e) => {
                           if (e.target.checked) {
-                            setCaughtBugs([...caughtBugs, bug.id]);
+                            setCaughtFish([...caughtFish, fish.id]);
                           } else {
-                            setCaughtBugs(
-                              caughtBugs.filter((id) => id !== bug.id)
+                            setCaughtFish(
+                              caughtFish.filter((id) => id !== fish.id)
                             );
                           }
                         }}
@@ -291,13 +297,13 @@ export default function ACBugs() {
                       <input
                         type="checkbox"
                         className="toggle toggle-success"
-                        checked={donatedBugs.includes(bug.id)}
+                        checked={donatedFish.includes(fish.id)}
                         onChange={(e) => {
                           if (e.target.checked) {
-                            setDonatedBugs([...donatedBugs, bug.id]);
+                            setDonatedFish([...donatedFish, fish.id]);
                           } else {
-                            setDonatedBugs(
-                              donatedBugs.filter((id) => id !== bug.id)
+                            setDonatedFish(
+                              donatedFish.filter((id) => id !== fish.id)
                             );
                           }
                         }}
@@ -320,8 +326,8 @@ export default function ACBugs() {
               className="btn btn-error"
               onClick={(e) => {
                 console.log("Clearing data");
-                removeCaughtBugs();
-                removeDonatedBugs();
+                removeCaughtFish();
+                removeDonatedFish();
               }}
             >
               Yes

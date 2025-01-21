@@ -1,8 +1,8 @@
 export default class Time {
-  from: string;
-  to: string;
+  from: number;
+  to: number;
 
-  constructor(from: string, to: string) {
+  constructor(from: number, to: number) {
     this.from = from;
     this.to = to;
   }
