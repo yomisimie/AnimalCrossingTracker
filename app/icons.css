@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/fonts/icomoon.eot?zl4bf');
-  src:  url('/fonts/icomoon.eot?zl4bf#iefix') format('embedded-opentype'),
-    url('/fonts/icomoon.ttf?zl4bf') format('truetype'),
-    url('/fonts/icomoon.woff?zl4bf') format('woff'),
-    url('/fonts/icomoon.svg?zl4bf#icomoon') format('svg');
+  src:  url('/fonts/icomoon.eot?3yhynz');
+  src:  url('/fonts/icomoon.eot?3yhynz#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?3yhynz') format('truetype'),
+    url('/fonts/icomoon.woff?3yhynz') format('woff'),
+    url('/fonts/icomoon.svg?3yhynz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-magnifying-glass:before {
+  content: "\e90e";
+}
 .icon-dinosaur-bones:before {
   content: "\e90d";
 }

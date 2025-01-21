@@ -4,7 +4,7 @@ export default class Fossil {
   price: number;
   group: string;
   score: number;
-  size: number;
+  size: string;
   image: string;
 
   constructor(
@@ -13,7 +13,7 @@ export default class Fossil {
     price: number,
     group: string,
     score: number,
-    size: number,
+    size: string,
     image: string
   ) {
     this.id = id;

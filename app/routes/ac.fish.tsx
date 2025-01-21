@@ -58,7 +58,7 @@ export default function ACFish() {
           Fish (GCN)
         </h1>
       </div>
-      <div className="flex justify-between gap-2 border-neutral-500 border-opacity-25 border-b-2 py-4">
+      <div className="flex justify-between gap-2 border-neutral-500 border-opacity-25 border-b-2 py-4 sticky top-0 z-10 bg-base-100">
         <div className="flex justify-start gap-2">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn">
