@@ -242,5 +242,109 @@
       }
     ],
     "image": "https://dodo.ac/np/images/2/22/Moth_CF_Icon.png"
+  },
+  {
+    "id": 11,
+    "name": "Oak silk moth",
+    "price": 1200,
+    "location": "On trees (any kind)",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 19,
+            "to": 4
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/a/ae/Oak_Silk_Moth_CF_Icon.png"
+  },
+  {
+    "id": 12,
+    "name": "Honeybee",
+    "price": 100,
+    "location": "Flying near flowers",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      },
+      {
+        "month": [7],
+        "time": [
+          {
+            "from": 8,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/1/1f/Honeybee_CF_Icon.png"
+  },
+  {
+    "id": 13,
+    "name": "Bee",
+    "price": 2500,
+    "location": "Shaking trees",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/e/e8/Bee_CF_Icon.png"
+  },
+  {
+    "id": 14,
+    "name": "Long locust",
+    "price": 200,
+    "location": "On the ground",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/56/Long_Locust_CF_Icon.png"
+  },
+  {
+    "id": 15,
+    "name": "Migratory locust",
+    "price": 600,
+    "location": "On the ground",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [8, 9, 10, 11],
+        "time": [
+          {
+            "from": 8,
+            "to": 19
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/8/80/Migratory_Locust_CF_Icon.png"
   }
 ]
