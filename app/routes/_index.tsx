@@ -56,7 +56,7 @@ const resources = [
   },
   {
     href: "ac-cf",
-    text: "Animal Crossing: City Folk (NDS)",
+    text: "Animal Crossing: City Folk (WII)",
     icon: <i className="icon-city-folk text-2xl "></i>,
   },
   {

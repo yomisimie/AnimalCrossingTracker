@@ -1,19 +1,20 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import bugs from "../../json/ac/bugs.json";
+import bugs from "../../json/ac-cf/bugs.json";
 import months from "../../json/months.json";
 import { useEffect, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import Bug from "~/types/Bug";
+import rarity from "../const/rarity";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Bugs (GCN)" },
+    { title: "Bugs (WII)" },
     { name: "description", content: "Track your progress!" },
   ];
 };
 
-export default function ACBugs() {
+export default function ACCFBugs() {
   const [data, setData] = useState<Bug[]>(bugs);
   const [selectedTime, setSelectedTime] = useState<number | null>(null);
   const [selectedMonths, setSelectedMonths] = useState<number[]>([]);
@@ -30,17 +31,23 @@ export default function ACBugs() {
 
     if (selectedMonths.length > 0) {
       filteredData = filteredData.filter((bug: Bug) =>
-        selectedMonths.some((month) => bug.months?.includes(month))
+        selectedMonths.some((month) =>
+          bug.availability?.some((a) => a.month.includes(month))
+        )
       );
     }
 
     if (selectedTime) {
       filteredData = filteredData.filter((bug: Bug) => {
-        return bug.time?.some((t) => {
-          if (t.from > t.to) {
-            return selectedTime >= t.from || selectedTime <= t.to;
-          }
-          return selectedTime >= t.from && selectedTime <= t.to;
+        return bug.availability?.some((a) => {
+          return a.time.some((t) => {
+            if (t.from > t.to) {
+              // Handle time ranges that span midnight
+              return selectedTime >= t.from || selectedTime <= t.to;
+            }
+            // Handle normal time ranges
+            return selectedTime >= t.from && selectedTime <= t.to;
+          });
         });
       });
     }
@@ -51,11 +58,11 @@ export default function ACBugs() {
   return (
     <>
       <div className="flex py-4 border-neutral-500 border-opacity-25 border-b-2">
-        <Link to="/ac" className="btn btn-primary">
+        <Link to="/ac-cf" className="btn btn-primary">
           <i className="icon-arrow-left"></i>
         </Link>
         <h1 className="mx-auto text-center text-3xl font-[FinkHeavy] text-primary self-center">
-          Bugs (GCN)
+          Bugs (WII)
         </h1>
       </div>
       <div className="flex justify-between gap-2 border-neutral-500 border-opacity-25 border-b-2 py-4 sticky top-0 z-10 bg-base-100">
@@ -76,10 +83,7 @@ export default function ACBugs() {
                 <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto"
-            >
+            <ul className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto">
               {Array.from({ length: 24 }, (_, i) => (
                 <li key={i}>
                   <input
@@ -101,7 +105,6 @@ export default function ACBugs() {
             disabled={selectedTime === null}
             onClick={() => setSelectedTime(null)}
             title="Clear time"
-            aria-description="Clear time"
           >
             <i className="icon-cancel"></i>
           </button>
@@ -126,10 +129,7 @@ export default function ACBugs() {
                 <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto"
-            >
+            <ul className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto">
               {months.map((month) => (
                 <li key={month.id}>
                   <input
@@ -157,7 +157,6 @@ export default function ACBugs() {
             disabled={!selectedMonths.length}
             onClick={() => setSelectedMonths([])}
             title="Clear months"
-            aria-description="Clear months"
           >
             <i className="icon-cancel"></i>
           </button>
@@ -170,7 +169,6 @@ export default function ACBugs() {
               setSelectedMonths([new Date().getMonth() + 1]);
             }}
             title="Now"
-            aria-description="Now"
           >
             Now
           </button>
@@ -178,7 +176,6 @@ export default function ACBugs() {
         <a
           className="btn btn-error self-end"
           title="Clear data"
-          aria-description="Clear data"
           href="#clear_data_modal"
         >
           <i className="icon-cancel"></i>Clear data
@@ -208,9 +205,8 @@ export default function ACBugs() {
               <th>Image</th>
               <th>Price</th>
               <th>Location</th>
-              <th>Weather</th>
-              <th>Time</th>
-              <th>Months</th>
+              <th>Rarity</th>
+              <th>Availability</th>
               <th>Caught</th>
               <th>Donated</th>
             </tr>
@@ -229,35 +225,45 @@ export default function ACBugs() {
                 </td>
                 <td>{bug.price}</td>
                 <td className="max-w-52">{bug.location}</td>
-                <td className="max-w-52">{bug.weather}</td>
+                <td className="max-w-52">{rarity[bug.rarity]}</td>
                 <td>
-                  {bug.time
-                    .map(
-                      (t) =>
-                        `${t.from.toString().padStart(2, "0")}:00 - ${t.to
-                          .toString()
-                          .padStart(2, "0")}:00`
-                    )
-                    .join("; ")}
-                </td>
-                <td>
-                  <ul className="flex gap-1">
-                    {months.map((month) => (
-                      <li
-                        key={month.name}
-                        className="tooltip"
-                        data-tip={month.name}
-                      >
-                        <span
-                          className={`badge cursor-pointer  ${
-                            bug.months.includes(month.id)
-                              ? "badge-primary"
-                              : "badge-neutral"
-                          }`}
-                          aria-label={month.name}
-                          onClick={() => setSelectedMonths([month.id])}
-                        >
-                          {month.letter}
+                  <ul className="flex flex-col gap-1">
+                    {bug.availability?.map((a, index) => (
+                      <li key={index} className="flex justify-between">
+                        <span>
+                          {a.time
+                            .map(
+                              (t) =>
+                                `${t.from
+                                  .toString()
+                                  .padStart(2, "0")}:00 - ${t.to
+                                  .toString()
+                                  .padStart(2, "0")}:00`
+                            )
+                            .join(", ")}
+                        </span>
+                        <span>
+                          <ul className="flex gap-1 justify-end flex-wrap">
+                            {months.map((month) => {
+                              return (
+                                <li
+                                  key={month?.name}
+                                  className="tooltip"
+                                  data-tip={month?.name}
+                                >
+                                  <span
+                                    className={`badge cursor-pointer ${
+                                      a.month.includes(month.id)
+                                        ? "badge-primary"
+                                        : "badge-neutral"
+                                    }`}
+                                  >
+                                    {month?.letter}
+                                  </span>
+                                </li>
+                              );
+                            })}
+                          </ul>
                         </span>
                       </li>
                     ))}
@@ -310,28 +316,6 @@ export default function ACBugs() {
           </tbody>
         </table>
       )}
-      <div className="modal" role="dialog" id="clear_data_modal">
-        <div className="modal-box">
-          <h3 className="text-lg font-bold">Clear saved data?</h3>
-          <p className="py-4">This will delete all the saved data</p>
-          <div className="modal-action">
-            <a
-              href="#"
-              className="btn btn-error"
-              onClick={(e) => {
-                console.log("Clearing data");
-                removeCaughtBugs();
-                removeDonatedBugs();
-              }}
-            >
-              Yes
-            </a>
-            <a href="#" className="btn btn-info">
-              No
-            </a>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

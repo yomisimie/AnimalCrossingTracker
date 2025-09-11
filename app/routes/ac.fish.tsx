@@ -1,7 +1,7 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import fish from "json/ac/fish.json";
-import months from "json/months.json";
+import fish from "../../json/ac/fish.json";
+import months from "../../json/months.json";
 import { useEffect, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import Fish from "~/types/Fish";

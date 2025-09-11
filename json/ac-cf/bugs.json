@@ -1,0 +1,246 @@
+[
+  {
+    "id": 1,
+    "name": "Common butterfly",
+    "price": 90,
+    "location": "Flying near flowers",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/5a/Common_Butterfly_CF_Icon.png"
+  },
+  {
+    "id": 2,
+    "name": "Yellow butterfly",
+    "price": 90,
+    "location": "Flying near flowers",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6],
+        "time": [
+          {
+            "from": 8,
+            "to": 19
+          }
+        ]
+      },
+      {
+        "month": [9],
+        "time": [
+          {
+            "from": 8,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/9/9d/Yellow_Butterfly_CF_Icon.png"
+  },
+  {
+    "id": 3,
+    "name": "Tiger butterfly",
+    "price": 160,
+    "location": "Flying near red and pink flowers",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6],
+        "time": [
+          {
+            "from": 4,
+            "to": 19
+          }
+        ]
+      },
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      },
+      {
+        "month": [9],
+        "time": [
+          {
+            "from": 8,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/6/68/Tiger_Butterfly_CF_Icon.png"
+  },
+  {
+    "id": 4,
+    "name": "Peacock",
+    "price": 220,
+    "location": "Flying near blue, purple, and black flowers",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6],
+        "time": [
+          {
+            "from": 4,
+            "to": 19
+          }
+        ]
+      },
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      },
+      {
+        "month": [9],
+        "time": [
+          {
+            "from": 8,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/5e/Peacock_CF_Icon.png"
+  },
+  {
+    "id": 5,
+    "name": "Monarch",
+    "price": 140,
+    "location": "Flying near flowers",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [9, 10],
+        "time": [
+          {
+            "from": 4,
+            "to": 17
+          }
+        ]
+      },
+      {
+        "month": [11],
+        "time": [
+          {
+            "from": 8,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/c/cc/Monarch_CF_Icon.png"
+  },
+  {
+    "id": 6,
+    "name": "Emperor",
+    "price": 2500,
+    "location": "Flying near flowers",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 19,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/b/bc/Emperor_CF_Icon.png"
+  },
+  {
+    "id": 7,
+    "name": "Agrias butterfly",
+    "price": 3000,
+    "location": "Flying near flowers",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/e/e3/Agrias_Butterfly_CF_Icon.png"
+  },
+  {
+    "id": 8,
+    "name": "Raja Brooke",
+    "price": 2500,
+    "location": "Near freshwater",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/0/0a/Raja_Brooke_CF_Icon.png"
+  },
+  {
+    "id": 9,
+    "name": "Birdwing",
+    "price": 4000,
+    "location": "Flying near flowers",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/b/b4/Birdwing_CF_Icon.png"
+  },
+  {
+    "id": 10,
+    "name": "Moth",
+    "price": 60,
+    "location": "Flying near light sources",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 19,
+            "to": 4
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/2/22/Moth_CF_Icon.png"
+  }
+]

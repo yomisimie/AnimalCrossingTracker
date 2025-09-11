@@ -1,6 +1,6 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import fossils from "json/ac/fossils.json";
+import fossils from "../../json/ac/fossils.json";
 import { useEffect, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import Fossil from "~/types/Fossil";

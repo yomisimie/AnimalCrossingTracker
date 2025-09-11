@@ -1,14 +1,16 @@
-import Time from "./Time";
+import { Time, Availability } from "./Time";
 
 export default class Bug {
   id: number;
   name: string;
   location: string;
   price: number;
-  time: Time[];
-  months: number[];
+  time?: Time[];
+  months?: number[];
   image: string;
-  weather: string;
+  weather?: string;
+  availability?: Availability[];
+  rarity: string;
 
   constructor(
     id: number,
@@ -18,7 +20,9 @@ export default class Bug {
     time: Time[],
     months: number[],
     image: string,
-    weather: string
+    weather: string,
+    availability?: Availability[],
+    rarity?: string
   ) {
     this.image = image;
     this.id = id;
@@ -28,5 +32,7 @@ export default class Bug {
     this.time = time;
     this.weather = weather;
     this.months = months;
+    this.availability = availability;
+    this.rarity = rarity || "";
   }
 }
