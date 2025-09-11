@@ -221,18 +221,24 @@ export default function ACFish() {
                 <td>{fish.id}</td>
                 <td>{fish.name}</td>
                 <td className="text-center min-w-16">
-                  <img
-                    src={fish.image}
-                    alt={fish.name}
-                    className="pixelated inline-block w-12 h-auto"
-                  />
+                  <div className="avatar">
+                    <div className="w-12 rounded-full bg-[#bd6bc6]">
+                      <img
+                        src={fish.image}
+                        alt={fish.name}
+                        className="pixelated inline-block w-12 h-auto"
+                      />
+                    </div>
+                  </div>
                 </td>
-                <td className="flex gap-1 justify-center items-center">
-                  <img
-                    src="https://dodo.ac/np/images/thumb/4/49/99k_Bells_NH_Inv_Icon_cropped.png/15px-99k_Bells_NH_Inv_Icon_cropped.png"
-                    alt="Bells"
-                  />
-                  {fish.price}
+                <td className="align-middle">
+                  <span className="flex gap-1 justify-center items-center">
+                    <img
+                      src="https://dodo.ac/np/images/thumb/4/49/99k_Bells_NH_Inv_Icon_cropped.png/15px-99k_Bells_NH_Inv_Icon_cropped.png"
+                      alt="Bells"
+                    />
+                    {fish.price}
+                  </span>
                 </td>
                 <td className="max-w-52">{fish.location}</td>
                 <td className="max-w-52">{fish.shadow}</td>

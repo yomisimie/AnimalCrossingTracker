@@ -221,13 +221,25 @@ export default function ACBugs() {
                 <td>{bug.id}</td>
                 <td>{bug.name}</td>
                 <td className="text-center min-w-16">
-                  <img
-                    src={bug.image}
-                    alt={bug.name}
-                    className="pixelated inline-block w-12 h-auto"
-                  />
+                  <div className="avatar">
+                    <div className="w-12 rounded-full bg-[#bd6bc6]">
+                      <img
+                        src={bug.image}
+                        alt={bug.name}
+                        className="pixelated inline-block w-12 h-auto"
+                      />
+                    </div>
+                  </div>
                 </td>
-                <td>{bug.price}</td>
+                <td className="align-middle">
+                  <span className="flex gap-1 justify-center items-center">
+                    <img
+                      src="https://dodo.ac/np/images/thumb/4/49/99k_Bells_NH_Inv_Icon_cropped.png/15px-99k_Bells_NH_Inv_Icon_cropped.png"
+                      alt="Bells"
+                    />
+                    {bug.price}
+                  </span>
+                </td>
                 <td className="max-w-52">{bug.location}</td>
                 <td className="max-w-52">{bug.weather}</td>
                 <td>

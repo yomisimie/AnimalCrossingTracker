@@ -101,13 +101,25 @@ export default function ACFossils() {
                 <td>{fossil.id}</td>
                 <td>{fossil.name}</td>
                 <td className="text-center min-w-16">
-                  <img
-                    src={fossil.image}
-                    alt={fossil.name}
-                    className="pixelated inline-block w-12 h-auto"
-                  />
+                  <div className="avatar">
+                    <div className="w-12 rounded-full bg-[#bd6bc6] p-0.5">
+                      <img
+                        src={fossil.image}
+                        alt={fossil.name}
+                        className="pixelated inline-block w-12 h-auto"
+                      />
+                    </div>
+                  </div>
                 </td>
-                <td>{fossil.price}</td>
+                <td className="align-middle">
+                  <span className="flex gap-1 justify-center items-center">
+                    <img
+                      src="https://dodo.ac/np/images/thumb/4/49/99k_Bells_NH_Inv_Icon_cropped.png/15px-99k_Bells_NH_Inv_Icon_cropped.png"
+                      alt="Bells"
+                    />
+                    {fossil.price}
+                  </span>
+                </td>
                 <td>{fossil.group}</td>
                 <td>{fossil.score}</td>
                 <td>{fossil.size}</td>
