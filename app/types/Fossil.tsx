@@ -4,6 +4,7 @@ export default class Fossil {
   price: number;
   group: string;
   score: number;
+  genre: string;
   size: string;
   image: string;
 
@@ -13,15 +14,17 @@ export default class Fossil {
     price: number,
     group: string,
     score: number,
+    genre: string,
     size: string,
     image: string
   ) {
     this.id = id;
     this.name = name;
     this.price = price;
-    this.image = image;
     this.group = group;
     this.score = score;
+    this.genre = genre;
     this.size = size;
+    this.image = image;
   }
 }
