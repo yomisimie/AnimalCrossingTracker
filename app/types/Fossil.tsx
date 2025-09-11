@@ -4,10 +4,10 @@ export default class Fossil {
   price: number;
   group: string;
   score: number;
-  genre: string;
+  genre?: string;
   size: string;
   image: string;
-  color: string[]; // Added color property
+  color?: string[]; // Added color property
 
   constructor(
     id: number,

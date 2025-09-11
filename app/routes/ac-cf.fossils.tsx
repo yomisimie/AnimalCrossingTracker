@@ -127,7 +127,7 @@ export default function ACFossils() {
                 </td>
                 <td>{fossil.group}</td>
                 <td className="flex justify-center flex-col">
-                  {fossil.color.map((c, index) => (
+                  {fossil.color?.map((c, index) => (
                     <span
                       key={index}
                       className="inline-block px-2 py-1 m-0.5 rounded text-white text-xs"

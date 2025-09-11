@@ -4,6 +4,7 @@ const rarity: Record<string, string> = {
   C: "Very uncommon",
   B: "Rare",
   A: "Very rare",
+  0: "",
 };
 
 export default rarity;

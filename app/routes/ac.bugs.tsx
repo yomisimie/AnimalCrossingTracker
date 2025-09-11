@@ -76,10 +76,7 @@ export default function ACBugs() {
                 <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto"
-            >
+            <ul className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto">
               {Array.from({ length: 24 }, (_, i) => (
                 <li key={i}>
                   <input
@@ -101,7 +98,6 @@ export default function ACBugs() {
             disabled={selectedTime === null}
             onClick={() => setSelectedTime(null)}
             title="Clear time"
-            aria-description="Clear time"
           >
             <i className="icon-cancel"></i>
           </button>
@@ -126,10 +122,7 @@ export default function ACBugs() {
                 <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto"
-            >
+            <ul className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto">
               {months.map((month) => (
                 <li key={month.id}>
                   <input
@@ -157,7 +150,6 @@ export default function ACBugs() {
             disabled={!selectedMonths.length}
             onClick={() => setSelectedMonths([])}
             title="Clear months"
-            aria-description="Clear months"
           >
             <i className="icon-cancel"></i>
           </button>
@@ -170,7 +162,6 @@ export default function ACBugs() {
               setSelectedMonths([new Date().getMonth() + 1]);
             }}
             title="Now"
-            aria-description="Now"
           >
             Now
           </button>
@@ -178,7 +169,6 @@ export default function ACBugs() {
         <a
           className="btn btn-error self-end"
           title="Clear data"
-          aria-description="Clear data"
           href="#clear_data_modal"
         >
           <i className="icon-cancel"></i>Clear data
@@ -244,7 +234,7 @@ export default function ACBugs() {
                 <td className="max-w-52">{bug.weather}</td>
                 <td>
                   {bug.time
-                    .map(
+                    ?.map(
                       (t) =>
                         `${t.from.toString().padStart(2, "0")}:00 - ${t.to
                           .toString()
@@ -260,9 +250,9 @@ export default function ACBugs() {
                         className="tooltip"
                         data-tip={month.name}
                       >
-                        <span
+                        <button
                           className={`badge cursor-pointer  ${
-                            bug.months.includes(month.id)
+                            bug.months?.includes(month.id)
                               ? "badge-primary"
                               : "badge-neutral"
                           }`}
@@ -270,7 +260,7 @@ export default function ACBugs() {
                           onClick={() => setSelectedMonths([month.id])}
                         >
                           {month.letter}
-                        </span>
+                        </button>
                       </li>
                     ))}
                   </ul>
@@ -330,8 +320,7 @@ export default function ACBugs() {
             <a
               href="#"
               className="btn btn-error"
-              onClick={(e) => {
-                console.log("Clearing data");
+              onClick={() => {
                 removeCaughtBugs();
                 removeDonatedBugs();
               }}

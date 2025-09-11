@@ -237,7 +237,7 @@ export default function ACCFBugs() {
                   </span>
                 </td>
                 <td className="max-w-52">{bug.location}</td>
-                <td className="max-w-52">{rarity[bug.rarity]}</td>
+                <td className="max-w-52">{rarity[bug.rarity ?? 0]}</td>
                 <td>
                   <ul className="flex flex-col gap-1">
                     {bug.availability?.map((a, index) => (

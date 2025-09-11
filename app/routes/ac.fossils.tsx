@@ -40,7 +40,10 @@ export default function ACFossils() {
         </h1>
       </div>
       <div className="flex justify-between gap-2 border-neutral-500 border-opacity-25 border-b-2 py-4 sticky top-0 z-10 bg-base-100">
-        <label className="input input-bordered flex items-center gap-2">
+        <label
+          className="input input-bordered flex items-center gap-2"
+          aria-label="Search fossils"
+        >
           <input
             type="text"
             className="grow"
@@ -49,18 +52,18 @@ export default function ACFossils() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <i className="icon-magnifying-glass"></i>
-          <i
-            className={`icon-cancel ${
-              searchTerm ? "text-red-500 cursor-pointer" : ""
-            }`}
-            onClick={() => setSearchTerm("")}
-            title="Clear search"
-          ></i>
+          <button onClick={() => setSearchTerm("")}>
+            <i
+              className={`icon-cancel ${
+                searchTerm ? "text-red-500 cursor-pointer" : ""
+              }`}
+              title="Clear search"
+            ></i>
+          </button>
         </label>
         <a
           className="btn btn-error self-end"
           title="Clear data"
-          aria-description="Clear data"
           href="#clear_data_modal"
         >
           <i className="icon-cancel"></i>Clear data
@@ -157,8 +160,7 @@ export default function ACFossils() {
             <a
               href="#"
               className="btn btn-error"
-              onClick={(e) => {
-                console.log("Clearing data");
+              onClick={() => {
                 removeDonatedFossils();
               }}
             >

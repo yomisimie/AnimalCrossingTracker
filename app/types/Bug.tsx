@@ -10,7 +10,7 @@ export default class Bug {
   image: string;
   weather?: string;
   availability?: Availability[];
-  rarity: string;
+  rarity?: string;
 
   constructor(
     id: number,
