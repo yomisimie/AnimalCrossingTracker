@@ -346,5 +346,1047 @@
       }
     ],
     "image": "https://dodo.ac/np/images/8/80/Migratory_Locust_CF_Icon.png"
+  },
+  {
+    "id": 16,
+    "name": "Mantis",
+    "price": 430,
+    "location": "On flowers",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/d/da/Mantis_CF_Icon.png"
+  },
+  {
+    "id": 17,
+    "name": "Orchid Mantis",
+    "price": 2400,
+    "location": "On white flowers",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/6/60/Orchid_Mantis_CF_Icon.png"
+  },
+  {
+    "id": 18,
+    "name": "Brown Cicada",
+    "price": 200,
+    "location": "On trees (hardwood and cedar)",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/58/Brown_Cicada_CF_Icon.png"
+  },
+  {
+    "id": 19,
+    "name": "Robust Cicada",
+    "price": 300,
+    "location": "On trees (hardwood and cedar)",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/b/b1/Robust_Cicada_CF_Icon.png"
+  },
+  {
+    "id": 20,
+    "name": "Walker Cicada",
+    "price": 400,
+    "location": "On trees (hardwood and cedar)",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [7, 8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/c/c7/Walker_Cicada_CF_Icon.png"
+  },
+  {
+    "id": 21,
+    "name": "Evening Cicada",
+    "price": 550,
+    "location": "On trees (hardwood and cedar)",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 4,
+            "to": 8
+          },
+          {
+            "from": 16,
+            "to": 19
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/6/6d/Evening_Cicada_CF_Icon.png"
+  },
+  {
+    "id": 22,
+    "name": "Lantern Fly",
+    "price": 1800,
+    "location": "On trees (hardwood and cedar)",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [6, 9],
+        "time": [
+          {
+            "from": 16,
+            "to": 19
+          },
+          {
+            "from": 23,
+            "to": 8
+          }
+        ]
+      },
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 16,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/3/31/Lantern_Fly_CF_Icon.png"
+  },
+  {
+    "id": 23,
+    "name": "Red Dragonfly",
+    "price": 80,
+    "location": "Flying",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [9, 10],
+        "time": [
+          {
+            "from": 8,
+            "to": 19
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/7/74/Red_Dragonfly_CF_Icon.png"
+  },
+  {
+    "id": 24,
+    "name": "Darner Dragonfly",
+    "price": 200,
+    "location": "Flying",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [6, 7, 8],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/f/f1/Darner_Dragonfly_CF_Icon.png"
+  },
+  {
+    "id": 25,
+    "name": "Banded Dragonfly",
+    "price": 4500,
+    "location": "Flying",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/6/68/Banded_Dragonfly_CF_Icon.png"
+  },
+  {
+    "id": 26,
+    "name": "Giant Petaltail",
+    "price": 8000,
+    "location": "Flying",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [8, 9, 10],
+        "time": [
+          {
+            "from": 17,
+            "to": 19
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/e/e8/Giant_Petaltail_CF_Icon.png"
+  },
+  {
+    "id": 27,
+    "name": "Ant",
+    "price": 80,
+    "location": "On spoiled turnips/candy",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/9/99/Ant_CF_Icon.png"
+  },
+  {
+    "id": 28,
+    "name": "Pondskater",
+    "price": 130,
+    "location": "On rivers and ponds",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 19
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/4/4b/Pondskater_CF_Icon.png"
+  },
+  {
+    "id": 29,
+    "name": "Diving Beetle",
+    "price": 800,
+    "location": "On rivers and ponds",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/4/43/Diving_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 30,
+    "name": "Snail",
+    "price": 250,
+    "location": "On flowers (raining)",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      },
+      {
+        "month": [5, 6],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/3/3f/Snail_CF_Icon.png"
+  },
+  {
+    "id": 31,
+    "name": "Cricket",
+    "price": 130,
+    "location": "On the ground",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [9, 10, 11],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/3/34/Cricket_CF_Icon.png"
+  },
+  {
+    "id": 32,
+    "name": "Bell Cricket",
+    "price": 430,
+    "location": "On the ground",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [9, 10],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/c/cf/Bell_Cricket_CF_Icon.png"
+  },
+  {
+    "id": 33,
+    "name": "Grasshopper",
+    "price": 160,
+    "location": "On the ground",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [7],
+        "time": [
+          {
+            "from": 16,
+            "to": 17
+          }
+        ]
+      },
+      {
+        "month": [8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/a/af/Grasshopper_CF_Icon.png"
+  },
+  {
+    "id": 34,
+    "name": "Mole Cricket",
+    "price": 280,
+    "location": "Underground",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/d/d6/Mole_Cricket_CF_Icon.png"
+  },
+  {
+    "id": 35,
+    "name": "Walking Leaf",
+    "price": 600,
+    "location": "On the ground",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [7, 8, 9],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/f/f5/Walking_Leaf_CF_Icon.png"
+  },
+  {
+    "id": 36,
+    "name": "Walkingstick",
+    "price": 600,
+    "location": "On trees (any kind)",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 4,
+            "to": 8
+          },
+          {
+            "from": 17,
+            "to": 19
+          }
+        ]
+      },
+      {
+        "month": [9, 10, 11],
+        "time": [
+          {
+            "from": 4,
+            "to": 19
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/5e/Walkingstick_CF_Icon.png"
+  },
+  {
+    "id": 37,
+    "name": "Bagworm",
+    "price": 300,
+    "location": "Shaking trees (hardwood and cedar)",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [1, 2, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/9/98/Bagworm_CF_Icon.png"
+  },
+  {
+    "id": 38,
+    "name": "Ladybug",
+    "price": 200,
+    "location": "On flowers",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [3, 4, 5, 9, 10],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/a/ae/Ladybug_CF_Icon.png"
+  },
+  {
+    "id": 39,
+    "name": "Violin Beetle",
+    "price": 260,
+    "location": "On tree stumps",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [6],
+        "time": [
+          {
+            "from": 4,
+            "to": 19
+          }
+        ]
+      },
+      {
+        "month": [9, 10],
+        "time": [
+          {
+            "from": 4,
+            "to": 17
+          }
+        ]
+      },
+      {
+        "month": [11],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/57/Violin_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 40,
+    "name": "Longhorn Beetle",
+    "price": 260,
+    "location": "On tree stumps",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 23,
+            "to": 19
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/e/ef/Longhorn_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 41,
+    "name": "Dung Beetle",
+    "price": 800,
+    "location": "Pushing snowballs",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [1, 2, 12],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/51/Dung_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 42,
+    "name": "Firefly",
+    "price": 300,
+    "location": "Flying near freshwater",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [6],
+        "time": [
+          {
+            "from": 19,
+            "to": 4
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/f/f7/Firefly_CF_Icon.png"
+  },
+  {
+    "id": 43,
+    "name": "Fruit Beetle",
+    "price": 100,
+    "location": "On trees",
+    "rarity": "D",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      },
+      {
+        "month": [9],
+        "time": [
+          {
+            "from": 19,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/d/de/Fruit_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 44,
+    "name": "Scarab Beetle",
+    "price": 6000,
+    "location": "On trees (any kind)",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 23,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/f/f1/Scarab_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 45,
+    "name": "Jewel Beetle",
+    "price": 2400,
+    "location": "On trees (hardwood and cedar)",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 8,
+            "to": 17
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/7/7c/Jewel_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 46,
+    "name": "Miyama Stag Beetle",
+    "price": 1000,
+    "location": "On trees (any kind)",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/7/75/Miyama_Stag_CF_Icon.png"
+  },
+  {
+    "id": 47,
+    "name": "Saw Stag Beetle",
+    "price": 2000,
+    "location": "On trees (any kind)",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/2/2d/Saw_Stag_CF_Icon.png"
+  },
+  {
+    "id": 48,
+    "name": "Giant beetle",
+    "price": 10000,
+    "location": "On trees (any kind)",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 23,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/52/Giant_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 49,
+    "name": "Rainbow stag",
+    "price": 10000,
+    "location": "On trees (any kind)",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [6, 9],
+        "time": [
+          {
+            "from": 19,
+            "to": 8
+          }
+        ]
+      },
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/7/70/Rainbow_Stag_CF_Icon.png"
+  },
+  {
+    "id": 50,
+    "name": "Cyclommatus",
+    "price": 8000,
+    "location": "On palm trees",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/0/08/Cyclommatus_CF_Icon.png"
+  },
+  {
+    "id": 51,
+    "name": "Golden stag",
+    "price": 12000,
+    "location": "On palm trees",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/a/a9/Golden_Stag_CF_Icon.png"
+  },
+  {
+    "id": 52,
+    "name": "Atlas beetle",
+    "price": 8000,
+    "location": "On palm trees",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/d/d8/Atlas_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 52,
+    "name": "Dynastid beetle",
+    "price": 1350,
+    "location": "On trees (any kind)",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/6/67/Dynastid_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 54,
+    "name": "Elephant beetle",
+    "price": 8000,
+    "location": "On palm trees",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/f/fa/Elephant_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 55,
+    "name": "Hercules beetle",
+    "price": 12000,
+    "location": "On palm trees",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/0/00/Hercules_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 56,
+    "name": "Goliath beetle",
+    "price": 6000,
+    "location": "On palm trees",
+    "rarity": "A",
+    "availability": [
+      {
+        "month": [6, 9],
+        "time": [
+          {
+            "from": 19,
+            "to": 8
+          }
+        ]
+      },
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 17,
+            "to": 8
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/c/c7/Goliath_Beetle_CF_Icon.png"
+  },
+  {
+    "id": 57,
+    "name": "Flea",
+    "price": 70,
+    "location": "On villagers",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/3/39/Flea_CF_Icon.png"
+  },
+  {
+    "id": 58,
+    "name": "Pill bug",
+    "price": 250,
+    "location": "From hitting rocks",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/4/4a/Pill_Bug_CF_Icon.png"
+  },
+  {
+    "id": 59,
+    "name": "Mosquito",
+    "price": 130,
+    "location": "Flying",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9, 10],
+        "time": [
+          {
+            "from": 17,
+            "to": 4
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/e/ea/Mosquito_CF_Icon.png"
+  },
+  {
+    "id": 60,
+    "name": "Fly",
+    "price": 60,
+    "location": "Flying near rafflesia, trash, or rotten turnips",
+    "rarity": "E",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/58/Fly_CF_Icon.png"
+  },
+  {
+    "id": 61,
+    "name": "Centipede",
+    "price": 300,
+    "location": "From hitting rocks",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [1, 2, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 16,
+            "to": 23
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/7/7c/Centipede_CF_Icon.png"
+  },
+  {
+    "id": 62,
+    "name": "Spider",
+    "price": 300,
+    "location": "Shaking trees",
+    "rarity": "C",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6, 9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      },
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 19,
+            "to": 8
+          }
+        ]
+      },
+      {
+        "month": [10],
+        "time": [
+          {
+            "from": 23,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/2/24/Spider_CF_Icon.png"
+  },
+  {
+    "id": 63,
+    "name": "Tarantula",
+    "price": 8000,
+    "location": "On the ground",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [6, 7, 8],
+        "time": [
+          {
+            "from": 19,
+            "to": 4
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/2/2f/Tarantula_CF_Icon.png"
+  },
+  {
+    "id": 64,
+    "name": "Scorpion",
+    "price": 8000,
+    "location": "On the ground",
+    "rarity": "B",
+    "availability": [
+      {
+        "month": [7, 8, 9],
+        "time": [
+          {
+            "from": 19,
+            "to": 4
+          }
+        ]
+      }
+    ],
+    "image": "https://dodo.ac/np/images/5/53/Scorpion_CF_Icon.png"
   }
 ]

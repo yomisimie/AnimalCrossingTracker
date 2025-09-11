@@ -21,8 +21,8 @@ export default class Bug {
     months: number[],
     image: string,
     weather: string,
-    availability?: Availability[],
-    rarity?: string
+    availability: Availability[],
+    rarity: string
   ) {
     this.image = image;
     this.id = id;

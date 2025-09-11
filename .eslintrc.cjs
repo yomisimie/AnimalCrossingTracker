@@ -48,6 +48,9 @@ module.exports = {
           typescript: {},
         },
       },
+      rules: {
+        "jsx-a11y/anchor-is-valid": 0,
+      },
     },
 
     // Typescript

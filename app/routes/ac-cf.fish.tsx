@@ -1,45 +1,44 @@
 import { MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
-import bugs from "../../json/ac-cf/bugs.json";
+import fish from "../../json/ac-cf/fish.json";
 import months from "../../json/months.json";
 import { useEffect, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
-import Bug from "~/types/Bug";
-import rarity from "../const/rarity";
+import Fish from "~/types/Fish";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Bugs (WII)" },
+    { title: "Fish (WII)" },
     { name: "description", content: "Track your progress!" },
   ];
 };
 
-export default function ACCFBugs() {
-  const [data, setData] = useState<Bug[]>(bugs);
+export default function ACCFFish() {
+  const [data, setData] = useState<Fish[]>(fish);
   const [selectedTime, setSelectedTime] = useState<number | null>(null);
   const [selectedMonths, setSelectedMonths] = useState<number[]>([]);
-  const [caughtBugs, setCaughtBugs, removeCaughtBugs] = useLocalStorage<
+  const [caughtFish, setCaughtFish, removeCaughtFish] = useLocalStorage<
     number[]
-  >("ACCF-caughtBugs", []);
-  const [donatedBugs, setDonatedBugs, removeDonatedBugs] = useLocalStorage<
+  >("ACCF-caughtFish", []);
+  const [donatedFish, setDonatedFish, removeDonatedFish] = useLocalStorage<
     number[]
-  >("ACCF-donatedBugs", []);
+  >("ACCF-donatedFish", []);
 
-  // Filter bugs based on selected time and months
+  // Filter fish based on selected time and months
   useEffect(() => {
-    let filteredData = bugs;
+    let filteredData = fish;
 
     if (selectedMonths.length > 0) {
-      filteredData = filteredData.filter((bug: Bug) =>
+      filteredData = filteredData.filter((fish: Fish) =>
         selectedMonths.some((month) =>
-          bug.availability?.some((a) => a.month.includes(month))
+          fish.availability?.some((a) => a.month.includes(month))
         )
       );
     }
 
     if (selectedTime) {
-      filteredData = filteredData.filter((bug: Bug) => {
-        return bug.availability?.some((a) => {
+      filteredData = filteredData.filter((fish: Fish) => {
+        return fish.availability?.some((a) => {
           return a.time.some((t) => {
             if (t.from > t.to) {
               // Handle time ranges that span midnight
@@ -62,7 +61,7 @@ export default function ACCFBugs() {
           <i className="icon-arrow-left"></i>
         </Link>
         <h1 className="mx-auto text-center text-3xl font-[FinkHeavy] text-primary self-center">
-          Bugs (WII)
+          Fish (WII)
         </h1>
       </div>
       <div className="flex justify-between gap-2 border-neutral-500 border-opacity-25 border-b-2 py-4 sticky top-0 z-10 bg-base-100">
@@ -205,30 +204,36 @@ export default function ACCFBugs() {
               <th>Image</th>
               <th>Price</th>
               <th>Location</th>
-              <th>Rarity</th>
+              <th>Shadow</th>
               <th>Availability</th>
               <th>Caught</th>
               <th>Donated</th>
             </tr>
           </thead>
           <tbody>
-            {data.map((bug: Bug) => (
-              <tr key={bug.id} className="hover">
-                <td>{bug.id}</td>
-                <td>{bug.name}</td>
+            {data.map((fish: Fish) => (
+              <tr key={fish.id} className="hover">
+                <td>{fish.id}</td>
+                <td>{fish.name}</td>
                 <td className="text-center min-w-16">
                   <img
-                    src={bug.image}
-                    alt={bug.name}
+                    src={fish.image}
+                    alt={fish.name}
                     className="pixelated inline-block w-12 h-auto"
                   />
                 </td>
-                <td>{bug.price}</td>
-                <td className="max-w-52">{bug.location}</td>
-                <td className="max-w-52">{rarity[bug.rarity]}</td>
+                <td className="flex gap-1 justify-center items-center">
+                  <img
+                    src="https://dodo.ac/np/images/thumb/4/49/99k_Bells_NH_Inv_Icon_cropped.png/15px-99k_Bells_NH_Inv_Icon_cropped.png"
+                    alt="Bells"
+                  />
+                  {fish.price}
+                </td>
+                <td className="max-w-52">{fish.location}</td>
+                <td className="max-w-52">{fish.shadow}</td>
                 <td>
                   <ul className="flex flex-col gap-1">
-                    {bug.availability?.map((a, index) => (
+                    {fish.availability?.map((a, index) => (
                       <li key={index} className="flex justify-between">
                         <span>
                           {a.time
@@ -275,18 +280,18 @@ export default function ACCFBugs() {
                 </td>
                 <td>
                   <div className="form-control">
-                    <label className="label cursor-pointer flex justify-center items-center">
+                    <label className="label cursor-pointer">
                       <span className="label-text me-2 md:hidden">Caught</span>
                       <input
                         type="checkbox"
                         className="toggle toggle-success"
-                        checked={caughtBugs.includes(bug.id)}
+                        checked={caughtFish.includes(fish.id)}
                         onChange={(e) => {
                           if (e.target.checked) {
-                            setCaughtBugs([...caughtBugs, bug.id]);
+                            setCaughtFish([...caughtFish, fish.id]);
                           } else {
-                            setCaughtBugs(
-                              caughtBugs.filter((id) => id !== bug.id)
+                            setCaughtFish(
+                              caughtFish.filter((id) => id !== fish.id)
                             );
                           }
                         }}
@@ -296,18 +301,18 @@ export default function ACCFBugs() {
                 </td>
                 <td>
                   <div className="form-control">
-                    <label className="label cursor-pointer flex justify-center items-center">
+                    <label className="label cursor-pointer">
                       <span className="label-text me-2 md:hidden">Donated</span>
                       <input
                         type="checkbox"
                         className="toggle toggle-success"
-                        checked={donatedBugs.includes(bug.id)}
+                        checked={donatedFish.includes(fish.id)}
                         onChange={(e) => {
                           if (e.target.checked) {
-                            setDonatedBugs([...donatedBugs, bug.id]);
+                            setDonatedFish([...donatedFish, fish.id]);
                           } else {
-                            setDonatedBugs(
-                              donatedBugs.filter((id) => id !== bug.id)
+                            setDonatedFish(
+                              donatedFish.filter((id) => id !== fish.id)
                             );
                           }
                         }}
@@ -329,8 +334,8 @@ export default function ACCFBugs() {
               href="#"
               className="btn btn-error"
               onClick={() => {
-                removeCaughtBugs();
-                removeDonatedBugs();
+                removeCaughtFish();
+                removeDonatedFish();
               }}
             >
               Yes

@@ -1,4 +1,4 @@
-import Time from "./Time";
+import { Time, Availability } from "./Time";
 
 export default class Fish {
   id: number;
@@ -6,9 +6,11 @@ export default class Fish {
   price: number;
   location: string;
   shadow: string;
-  time: Time[];
-  months: number[];
+  time?: Time[];
+  months?: number[];
   image: string;
+  availability?: Availability[];
+  size?: string;
 
   constructor(
     id: number,
@@ -18,7 +20,9 @@ export default class Fish {
     shadowSize: string,
     time: Time[],
     months: number[],
-    image: string
+    image: string,
+    availability?: Availability[],
+    size?: string
   ) {
     this.id = id;
     this.name = name;
@@ -28,5 +32,7 @@ export default class Fish {
     this.time = time;
     this.months = months;
     this.image = image;
+    this.availability = availability;
+    this.size = size || "";
   }
 }

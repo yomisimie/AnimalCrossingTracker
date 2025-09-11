@@ -1,107 +1,1329 @@
 [
   {
     "id": 1,
-    "name": "Crucian carp",
-    "price": 120,
-    "shadowSize": "Small",
+    "name": "Bitterling",
+    "price": 900,
+    "shadow": "Tiny",
     "location": "River",
-    "time": [
+    "availability": [
       {
-        "from": "00:00",
-        "to": "24:00"
+        "month": [1, 2, 6, 7, 8, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
       }
     ],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "https://dodo.ac/np/images/0/07/Crucian_Carp_PG_Icon.png"
+    "size": "About 4 in.",
+    "image": "https://dodo.ac/np/images/d/df/Bitterling_CF_Icon.png"
   },
   {
     "id": 2,
-    "name": "Book trout",
-    "price": 150,
-    "shadowSize": "Medium",
-    "location": "Lake",
-    "time": [
+    "name": "Pale chub",
+    "price": 200,
+    "shadow": "Small",
+    "location": "River",
+    "availability": [
       {
-        "from": "00:00",
-        "to": "24:00"
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
       }
     ],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "https://dodo.ac/np/images/0/0b/Brook_Trout_PG_Icon.png"
+    "size": "About 6 in.",
+    "image": "https://dodo.ac/np/images/1/10/Pale_Chub_CF_Icon.png"
   },
   {
     "id": 3,
-    "name": "Carp",
-    "price": 300,
-    "shadowSize": "Large",
+    "name": "Crucian carp",
+    "price": 120,
+    "shadow": "Small",
     "location": "River",
-    "time": [
+    "availability": [
       {
-        "from": "00:00",
-        "to": "24:00"
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
       }
     ],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "https://dodo.ac/np/images/d/d4/Carp_PG_Icon.png"
+    "size": "About 11.7 in.",
+    "image": "https://dodo.ac/np/images/f/fc/Crucian_Carp_CF_Icon.png"
   },
   {
     "id": 4,
-    "name": "Koi",
-    "price": 2000,
-    "shadowSize": "Large",
+    "name": "Dace",
+    "price": 200,
+    "shadow": "Medium",
     "location": "River",
-    "time": [
+    "availability": [
       {
-        "from": "16:00",
-        "to": "09:00"
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
       }
     ],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "https://dodo.ac/np/images/9/96/Koi_PG_Icon.png"
+    "size": "About 14 in.",
+    "image": "https://dodo.ac/np/images/9/90/Dace_CF_Icon.png"
   },
   {
     "id": 5,
-    "name": "Barbed steel",
+    "name": "Barbel steed",
     "price": 200,
-    "shadowSize": "Large",
+    "shadow": "Medium",
     "location": "River",
-    "time": [
+    "availability": [
       {
-        "from": "00:00",
-        "to": "24:00"
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
       }
     ],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "https://dodo.ac/np/images/f/f6/Barbel_Steed_PG_Icon.png"
+    "size": "About 20 in.",
+    "image": "https://dodo.ac/np/images/4/41/Barbel_Steed_CF_Icon.png"
   },
   {
     "id": 6,
-    "name": "Dace",
-    "price": 200,
-    "shadowSize": "Medium",
+    "name": "Carp",
+    "price": 300,
+    "shadow": "Medium",
     "location": "River",
-    "time": [
+    "availability": [
       {
-        "from": "16:00",
-        "to": "09:00"
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
       }
     ],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-    "image": "https://dodo.ac/np/images/c/cc/Dace_PG_Icon.png"
+    "size": "About 32 in.",
+    "image": "https://dodo.ac/np/images/c/c8/Carp_CF_Icon.png"
   },
   {
     "id": 7,
-    "name": "Catfish",
-    "price": 200,
-    "shadowSize": "Large",
+    "name": "Koi",
+    "price": 4000,
+    "shadow": "Medium",
     "location": "River",
-    "time": [
+    "availability": [
       {
-        "from": "16:00",
-        "to": "09:00"
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
       }
     ],
-    "months": [5, 6, 7, 8, 9, 10],
-    "image": "https://dodo.ac/np/images/7/75/Catfish_PG_Icon.png"
+    "size": "About 32 in.",
+    "image": "https://dodo.ac/np/images/a/a4/Koi_CF_Icon.png"
+  },
+  {
+    "id": 8,
+    "name": "Goldfish",
+    "price": 1300,
+    "shadow": "Tiny",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 6 in.",
+    "image": "https://dodo.ac/np/images/c/cd/Goldfish_CF_Icon.png"
+  },
+  {
+    "id": 9,
+    "name": "Popeyed goldfish",
+    "price": 1300,
+    "shadow": "Tiny",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "size": "About 6 in.",
+    "image": "https://dodo.ac/np/images/8/84/Popeyed_Goldfish_CF_Icon.png"
+  },
+  {
+    "id": 10,
+    "name": "Killifish",
+    "price": 300,
+    "shadow": "Tiny",
+    "location": "Pond",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 1.6 in.",
+    "image": "https://dodo.ac/np/images/4/45/Killifish_CF_Icon.png"
+  },
+  {
+    "id": 11,
+    "name": "Crawfish",
+    "price": 250,
+    "shadow": "Small",
+    "location": "Pond",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 4.8 in.",
+    "image": "https://dodo.ac/np/images/0/0b/Crawfish_CF_Icon.png"
+  },
+  {
+    "id": 12,
+    "name": "Frog",
+    "price": 250,
+    "shadow": "Small",
+    "location": "Pond",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9, 10],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 4.8 in.",
+    "image": "https://dodo.ac/np/images/c/cd/Frog_CF_Icon.png"
+  },
+  {
+    "id": 13,
+    "name": "Freshwater goby",
+    "price": 300,
+    "shadow": "Small",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 6 in.",
+    "image": "https://dodo.ac/np/images/a/ab/Freshwater_Goby_CF_Icon.png"
+  },
+  {
+    "id": 14,
+    "name": "Loach",
+    "price": 300,
+    "shadow": "Medium",
+    "location": "River",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6, 7, 8],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 8 in.",
+    "image": "https://dodo.ac/np/images/c/c6/Loach_CF_Icon.png"
+  },
+  {
+    "id": 15,
+    "name": "Catfish",
+    "price": 800,
+    "shadow": "Medium",
+    "location": "River pool",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9, 10],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 24 in.",
+    "image": "https://dodo.ac/np/images/0/05/Catfish_CF_Icon.png"
+  },
+  {
+    "id": 16,
+    "name": "Eel",
+    "price": 2000,
+    "shadow": "Long & Thin",
+    "location": "River",
+    "availability": [
+      {
+        "month": [6, 7, 8],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 40 in.",
+    "image": "https://dodo.ac/np/images/6/68/Eel_CF_Icon.png"
+  },
+  {
+    "id": 17,
+    "name": "Giant snakehead",
+    "price": 5500,
+    "shadow": "Huge",
+    "location": "River pool",
+    "availability": [
+      {
+        "month": [6, 7, 8],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "size": "About 34 in.",
+    "image": "https://dodo.ac/np/images/5/55/Giant_Snakehead_CF_Icon.png"
+  },
+  {
+    "id": 18,
+    "name": "Bluegill",
+    "price": 120,
+    "shadow": "Small",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "size": "About 10 in.",
+    "image": "https://dodo.ac/np/images/6/69/Bluegill_CF_Icon.png"
+  },
+  {
+    "id": 19,
+    "name": "Yellow perch",
+    "price": 240,
+    "shadow": "Medium",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 3, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 14 in.",
+    "image": "https://dodo.ac/np/images/c/cc/Yellow_Perch_CF_Icon.png"
+  },
+  {
+    "id": 20,
+    "name": "Black bass",
+    "price": 300,
+    "shadow": "Medium",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 20 in.",
+    "image": "https://dodo.ac/np/images/3/32/Black_Bass_CF_Icon.png"
+  },
+  {
+    "id": 21,
+    "name": "Pike",
+    "price": 1800,
+    "shadow": "Large",
+    "location": "River",
+    "availability": [
+      {
+        "month": [9, 10, 11, 12],
+        "time": [
+          {
+            "from": 4,
+            "to": 21
+          }
+        ]
+      }
+    ],
+    "size": "About 52 in.",
+    "image": "https://dodo.ac/np/images/2/2c/Pike_CF_Icon.png"
+  },
+  {
+    "id": 22,
+    "name": "Pond smelt",
+    "price": 300,
+    "shadow": "Small",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 6 in.",
+    "image": "https://dodo.ac/np/images/a/a2/Pond_Smelt_CF_Icon.png"
+  },
+  {
+    "id": 23,
+    "name": "Sweetfish",
+    "price": 900,
+    "shadow": "Medium",
+    "location": "River",
+    "availability": [
+      {
+        "month": [7, 8, 9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 10 in.",
+    "image": "https://dodo.ac/np/images/c/c4/Sweetfish_CF_Icon.png"
+  },
+  {
+    "id": 24,
+    "name": "Cherry salmon",
+    "price": 1000,
+    "shadow": "Medium",
+    "location": "River",
+    "availability": [
+      {
+        "month": [3, 4, 5, 9, 10, 11],
+        "time": [
+          {
+            "from": 4,
+            "to": 9
+          },
+          {
+            "from": 16,
+            "to": 21
+          }
+        ]
+      }
+    ],
+    "size": "About 14 in.",
+    "image": "https://dodo.ac/np/images/8/84/Cherry_Salmon_CF_Icon.png"
+  },
+  {
+    "id": 25,
+    "name": "Char",
+    "price": 3800,
+    "shadow": "Large",
+    "location": "Waterfall",
+    "availability": [
+      {
+        "month": [3, 4, 5, 9, 10, 11],
+        "time": [
+          {
+            "from": 4,
+            "to": 9
+          },
+          {
+            "from": 16,
+            "to": 21
+          }
+        ]
+      }
+    ],
+    "size": "About 20 in.",
+    "image": "https://dodo.ac/np/images/d/d0/Char_CF_Icon.png"
+  },
+  {
+    "id": 26,
+    "name": "Rainbow trout",
+    "price": 800,
+    "shadow": "Medium",
+    "location": "River",
+    "availability": [
+      {
+        "month": [3, 4, 5, 9, 10, 11],
+        "time": [
+          {
+            "from": 4,
+            "to": 9
+          },
+          {
+            "from": 16,
+            "to": 21
+          }
+        ]
+      }
+    ],
+    "size": "About 32 in.",
+    "image": "https://dodo.ac/np/images/7/7b/Rainbow_Trout_CF_Icon.png"
+  },
+  {
+    "id": 27,
+    "name": "Stringfish",
+    "price": 15000,
+    "shadow": "Large",
+    "location": "River",
+    "availability": [
+      {
+        "month": [1, 2, 12],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 60 in.",
+    "image": "https://dodo.ac/np/images/a/a9/Stringfish_CF_Icon.png"
+  },
+  {
+    "id": 28,
+    "name": "Salmon",
+    "price": 700,
+    "shadow": "Large",
+    "location": "River (mouth)",
+    "availability": [
+      {
+        "month": [9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 36 in.",
+    "image": "https://dodo.ac/np/images/1/1c/Salmon_CF_Icon.png"
+  },
+  {
+    "id": 29,
+    "name": "King salmon",
+    "price": 1800,
+    "shadow": "Huge",
+    "location": "River (mouth)",
+    "availability": [
+      {
+        "month": [7, 8],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 64 in.",
+    "image": "https://dodo.ac/np/images/9/96/King_Salmon_CF_Icon.png"
+  },
+  {
+    "id": 30,
+    "name": "Guppy",
+    "price": 1300,
+    "shadow": "Tiny",
+    "location": "River",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "size": "About 1.6 in.",
+    "image": "https://dodo.ac/np/images/2/26/Guppy_CF_Icon.png"
+  },
+  {
+    "id": 31,
+    "name": "Angelfish",
+    "price": 3000,
+    "shadow": "Tiny",
+    "location": "River",
+    "availability": [
+      {
+        "month": [5, 6, 7, 8, 9, 10],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 4.8 in.",
+    "image": "https://dodo.ac/np/images/5/5d/Angelfish_CF_Icon.png"
+  },
+  {
+    "id": 32,
+    "name": "Neon tetra",
+    "price": 500,
+    "shadow": "Tiny",
+    "location": "River",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "size": "About 0.8 in.",
+    "image": "https://dodo.ac/np/images/f/f0/Neon_Tetra_CF_Icon.png"
+  },
+  {
+    "id": 33,
+    "name": "Piranha",
+    "price": 2500,
+    "shadow": "Small",
+    "location": "River",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          },
+          {
+            "from": 21,
+            "to": 4
+          }
+        ]
+      }
+    ],
+    "size": "About 11.7 in.",
+    "image": "https://dodo.ac/np/images/8/85/Piranha_CF_Icon.png"
+  },
+  {
+    "id": 34,
+    "name": "Arowana",
+    "price": 10000,
+    "shadow": "Large",
+    "location": "River",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 28 in.",
+    "image": "https://dodo.ac/np/images/1/13/Arowana_CF_Icon.png"
+  },
+  {
+    "id": 35,
+    "name": "Dorado",
+    "price": 15000,
+    "shadow": "Huge",
+    "location": "River",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 4,
+            "to": 21
+          }
+        ]
+      }
+    ],
+    "size": "About 40 in.",
+    "image": "https://dodo.ac/np/images/1/1f/Dorado_CF_Icon.png"
+  },
+  {
+    "id": 36,
+    "name": "Gar",
+    "price": 6000,
+    "shadow": "Huge",
+    "location": "River pool",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 76 in.",
+    "image": "https://dodo.ac/np/images/d/dd/Gar_CF_Icon.png"
+  },
+  {
+    "id": 37,
+    "name": "Arapaima",
+    "price": 10000,
+    "shadow": "Huge",
+    "location": "River",
+    "availability": [
+      {
+        "month": [7, 8, 9, 10],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 120 in.",
+    "image": "https://dodo.ac/np/images/9/9c/Arapaima_CF_Icon.png"
+  },
+  {
+    "id": 38,
+    "name": "Sea butterfly",
+    "price": 1000,
+    "shadow": "Tiny",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 1.2 in.",
+    "image": "https://dodo.ac/np/images/4/42/Sea_Butterfly_CF_Icon.png"
+  },
+  {
+    "id": 39,
+    "name": "Moon jellyfish",
+    "price": 100,
+    "shadow": "Small",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [8],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 10 in.",
+    "image": "https://dodo.ac/np/images/f/fd/Jellyfish_CF_Icon.png"
+  },
+  {
+    "id": 40,
+    "name": "Sea horse",
+    "price": 1100,
+    "shadow": "Tiny",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [4, 10, 11],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      },
+      {
+        "month": [5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "size": "About 3.2 in.",
+    "image": "https://dodo.ac/np/images/7/7b/Sea_Horse_CF_Icon.png"
+  },
+  {
+    "id": 41,
+    "name": "Clownfish",
+    "price": 650,
+    "shadow": "Small",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [4, 9],
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      },
+      {
+        "month": [5, 6, 7, 8],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 6 in.",
+    "image": "https://dodo.ac/np/images/7/77/Clownfish_CF_Icon.png"
+  },
+  {
+    "id": 42,
+    "name": "Surgeonfish",
+    "price": 1000,
+    "shadow": "Small",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9, 10],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 12.4 in.",
+    "image": "https://dodo.ac/np/images/8/86/Surgeonfish_CF_Icon.png"
+  },
+  {
+    "id": 43,
+    "name": "Butterflyfish",
+    "price": 1000,
+    "shadow": "Small",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9, 10],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 7.2 in.",
+    "image": "https://dodo.ac/np/images/2/22/Butterfly_Fish_CF_Icon.png"
+  },
+  {
+    "id": 44,
+    "name": "Napoleonfish",
+    "price": 10000,
+    "shadow": "Huge",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [7, 8, 9, 10],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 80 in.",
+    "image": "https://dodo.ac/np/images/0/0a/Napoleonfish_CF_Icon.png"
+  },
+  {
+    "id": 45,
+    "name": "Zebra turkeyfish",
+    "price": 400,
+    "shadow": "Medium",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [4, 5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          },
+          {
+            "from": 9,
+            "to": 16
+          }
+        ]
+      }
+    ],
+    "size": "About 11.7 in.",
+    "image": "https://dodo.ac/np/images/2/20/Zebra_Turkeyfish_CF_Icon.png"
+  },
+  {
+    "id": 46,
+    "name": "Puffer fish",
+    "price": 240,
+    "shadow": "Small",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [7, 8, 9, 10],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 14 in.",
+    "image": "https://dodo.ac/np/images/8/8c/Puffer_Fish_CF_Icon.png"
+  },
+  {
+    "id": 47,
+    "name": "Horse mackerel",
+    "price": 150,
+    "shadow": "Small",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 16 in.",
+    "image": "https://dodo.ac/np/images/a/ae/Horse_Mackerel_CF_Icon.png"
+  },
+  {
+    "id": 48,
+    "name": "Barred knifejaw",
+    "price": 5000,
+    "shadow": "Medium",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 24 in.",
+    "image": "https://dodo.ac/np/images/7/7f/Barred_Knifejaw_CF_Icon.png"
+  },
+  {
+    "id": 49,
+    "name": "Sea bass",
+    "price": 200,
+    "shadow": "Large",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 40 in.",
+    "image": "https://dodo.ac/np/images/4/4c/Sea_Bass_CF_Icon.png"
+  },
+  {
+    "id": 50,
+    "name": "Red snapper",
+    "price": 3000,
+    "shadow": "Medium",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 36 in.",
+    "image": "https://dodo.ac/np/images/d/df/Red_Snapper_CF_Icon.png"
+  },
+  {
+    "id": 51,
+    "name": "Dab",
+    "price": 300,
+    "shadow": "Medium",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      },
+      {
+        "month": [5, 6, 7, 8, 9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 20 in.",
+    "image": "https://dodo.ac/np/images/2/2f/Dab_CF_Icon.png"
+  },
+  {
+    "id": 52,
+    "name": "Olive flounder",
+    "price": 800,
+    "shadow": "Medium",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 32 in.",
+    "image": "https://dodo.ac/np/images/5/51/Olive_Flounder_CF_Icon.png"
+  },
+  {
+    "id": 53,
+    "name": "Squid",
+    "price": 400,
+    "shadow": "Medium",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 14 in.",
+    "image": "https://dodo.ac/np/images/a/a5/Squid_CF_Icon.png"
+  },
+  {
+    "id": 54,
+    "name": "Octopus",
+    "price": 500,
+    "shadow": "Small",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 24 in.",
+    "image": "https://dodo.ac/np/images/d/d8/Octopus_CF_Icon.png"
+  },
+  {
+    "id": 55,
+    "name": "Lobster",
+    "price": 2500,
+    "shadow": "Large",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 20 in.",
+    "image": "https://dodo.ac/np/images/a/aa/Lobster_CF_Icon.png"
+  },
+  {
+    "id": 56,
+    "name": "Moray eel",
+    "price": 2000,
+    "shadow": "Large",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [8, 9, 10],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 32 in.",
+    "image": "https://dodo.ac/np/images/1/1a/Moray_Eel_CF_Icon.png"
+  },
+  {
+    "id": 57,
+    "name": "Football fish",
+    "price": 2500,
+    "shadow": "Medium",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 11, 12],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 24 in.",
+    "image": "https://dodo.ac/np/images/e/ef/Football_Fish_CF_Icon.png"
+  },
+  {
+    "id": 58,
+    "name": "Tuna",
+    "price": 7000,
+    "shadow": "Huge",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [1, 2, 3, 11, 12],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 90.6 in.",
+    "image": "https://dodo.ac/np/images/0/0c/Tuna_CF_Icon.png"
+  },
+  {
+    "id": 59,
+    "name": "Blue marlin",
+    "price": 10000,
+    "shadow": "Huge",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [7, 8, 9],
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ]
+      }
+    ],
+    "size": "About 88 in.",
+    "image": "https://dodo.ac/np/images/3/3c/Blue_Marlin_CF_Icon.png"
+  },
+  {
+    "id": 60,
+    "name": "Ray",
+    "price": 3000,
+    "shadow": "Huge",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [8, 9, 10, 11],
+        "time": [
+          {
+            "from": 4,
+            "to": 21
+          }
+        ]
+      }
+    ],
+    "size": "About 48 in.",
+    "image": "https://dodo.ac/np/images/0/04/Ray_CF_Icon.png"
+  },
+  {
+    "id": 61,
+    "name": "Ocean sunfish",
+    "price": 4000,
+    "shadow": "Huge (finned)",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 4,
+            "to": 21
+          }
+        ]
+      }
+    ],
+    "size": "About 120 in.",
+    "image": "https://dodo.ac/np/images/e/ee/Ocean_Sunfish_CF_Icon.png"
+  },
+  {
+    "id": 62,
+    "name": "Hammerhead shark",
+    "price": 8000,
+    "shadow": "Huge (finned)",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 100 in.",
+    "image": "https://dodo.ac/np/images/b/b6/Hammerhead_Shark_CF_Icon.png"
+  },
+  {
+    "id": 63,
+    "name": "Shark",
+    "price": 15000,
+    "shadow": "Huge (finned)",
+    "location": "Sea",
+    "availability": [
+      {
+        "month": [6, 7, 8, 9],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 216 in.",
+    "image": "https://dodo.ac/np/images/9/90/Shark_CF_Icon.png"
+  },
+  {
+    "id": 64,
+    "name": "Coelacanth",
+    "price": 15000,
+    "shadow": "Huge",
+    "location": "Sea (raining or snowing)",
+    "availability": [
+      {
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ]
+      }
+    ],
+    "size": "About 60 in.",
+    "image": "https://dodo.ac/np/images/1/1a/Coelacanth_CF_Icon.png"
   }
 ]
