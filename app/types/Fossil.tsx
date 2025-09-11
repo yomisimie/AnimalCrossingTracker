@@ -7,6 +7,7 @@ export default class Fossil {
   genre: string;
   size: string;
   image: string;
+  color: string[]; // Added color property
 
   constructor(
     id: number,
@@ -16,7 +17,8 @@ export default class Fossil {
     score: number,
     genre: string,
     size: string,
-    image: string
+    image: string,
+    color: string[] // Added color parameter
   ) {
     this.id = id;
     this.name = name;
@@ -26,5 +28,6 @@ export default class Fossil {
     this.genre = genre;
     this.size = size;
     this.image = image;
+    this.color = color; // Initialize color property
   }
 }

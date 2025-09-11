@@ -52,18 +52,18 @@ export default function ACFossils() {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <i className="icon-magnifying-glass"></i>
-          <i
-            className={`icon-cancel ${
-              searchTerm ? "text-red-500 cursor-pointer" : ""
-            }`}
-            onClick={() => setSearchTerm("")}
-            title="Clear search"
-          ></i>
+          <button onClick={() => setSearchTerm("")}>
+            <i
+              className={`icon-cancel ${
+                searchTerm ? "text-red-500 cursor-pointer" : ""
+              }`}
+              title="Clear search"
+            ></i>
+          </button>
         </label>
         <a
           className="btn btn-error self-end"
           title="Clear data"
-          aria-description="Clear data"
           href="#clear_data_modal"
         >
           <i className="icon-cancel"></i>Clear data
@@ -93,6 +93,7 @@ export default function ACFossils() {
               <th>Image</th>
               <th>Price</th>
               <th>Group</th>
+              <th>Colors</th>
               <th>HRA Score</th>
               <th>HRA Genre</th>
               <th>Size</th>
@@ -106,7 +107,7 @@ export default function ACFossils() {
                 <td>{fossil.name}</td>
                 <td className="text-center min-w-16">
                   <div className="avatar">
-                    <div className="w-12 rounded-full bg-[#bd6bc6] p-0.5">
+                    <div className="w-12 rounded-full bg-[#a4d4a2] p-0.5">
                       <img
                         src={fossil.image}
                         alt={fossil.name}
@@ -125,6 +126,17 @@ export default function ACFossils() {
                   </span>
                 </td>
                 <td>{fossil.group}</td>
+                <td className="flex justify-center flex-col">
+                  {fossil.color.map((c, index) => (
+                    <span
+                      key={index}
+                      className="inline-block px-2 py-1 m-0.5 rounded text-white text-xs"
+                      style={{ backgroundColor: c }}
+                    >
+                      {c}
+                    </span>
+                  ))}
+                </td>
                 <td>{fossil.score}</td>
                 <td>{fossil.genre}</td>
                 <td>
@@ -164,8 +176,7 @@ export default function ACFossils() {
             <a
               href="#"
               className="btn btn-error"
-              onClick={(e) => {
-                console.log("Clearing data");
+              onClick={() => {
                 removeDonatedFossils();
               }}
             >
