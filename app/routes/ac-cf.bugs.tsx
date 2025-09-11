@@ -251,15 +251,19 @@ export default function ACCFBugs() {
                                   className="tooltip"
                                   data-tip={month?.name}
                                 >
-                                  <span
+                                  <button
                                     className={`badge cursor-pointer ${
                                       a.month.includes(month.id)
                                         ? "badge-primary"
                                         : "badge-neutral"
                                     }`}
+                                    aria-label={month.name}
+                                    onClick={() =>
+                                      setSelectedMonths([month.id])
+                                    }
                                   >
                                     {month?.letter}
-                                  </span>
+                                  </button>
                                 </li>
                               );
                             })}
