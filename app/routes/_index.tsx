@@ -50,22 +50,22 @@ const resources = [
     icon: <i className="icon-bells text-2xl"></i>,
   },
   {
-    href: "ac-ww",
+    href: "/ac-ww",
     text: "Animal Crossing: Wild World (NDS)",
     icon: <i className="icon-wild-world text-2xl "></i>,
   },
   {
-    href: "ac-cf",
+    href: "/ac-cf",
     text: "Animal Crossing: City Folk (WII)",
     icon: <i className="icon-city-folk text-2xl "></i>,
   },
   {
-    href: "ac-nl",
+    href: "/ac-nl",
     text: "Animal Crossing: New Leaf (3DS)",
     icon: <i className="icon-new-leaf text-2xl "></i>,
   },
   {
-    href: "ac-nh",
+    href: "/ac-nh",
     text: "Animal Crossing: New Horizons (NSW)",
     icon: <i className="icon-new-horizons text-2xl "></i>,
   },

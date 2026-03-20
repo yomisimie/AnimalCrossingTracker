@@ -1,25 +1,25 @@
 import { MetaFunction } from "@remix-run/node";
 import ACList from "~/components/ACList";
-import fish from "../../json/ac/fish.json";
+import bugs from "../../json/ac-ww/bugs.json";
 import months from "../../json/months.json";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Fish (GCN)" },
+    { title: "Bugs (DS)" },
     { name: "description", content: "Track your progress!" },
   ];
 };
 
-export default function ACFish() {
+export default function ACWWBugs() {
   return (
     <ACList
-      type="fish"
-      title="Fish (GCN)"
-      rawData={fish}
+      type="bugs"
+      title="Bugs (DS)"
+      rawData={bugs}
       months={months}
-      caughtId="AC-caughtFish"
-      donatedId="AC-donatedFish"
-      backLink="/ac"
+      caughtId="ACWW-caughtBugs"
+      donatedId="ACWW-donatedBugs"
+      backLink="/ac-ww"
     />
   );
 }

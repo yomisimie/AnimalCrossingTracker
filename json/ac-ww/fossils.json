@@ -1,56 +1,470 @@
 [
   {
     "id": 1,
+    "name": "Amber",
+    "price": 1200,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "name": "Ammonite",
+    "price": 1100,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "name": "Dino droppings",
+    "price": 1100,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "name": "Dinosaur egg",
+    "price": 1400,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "name": "Fern fossil",
+    "price": 1000,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "name": "Dinosaur track",
+    "price": 1000,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 7,
+    "name": "Archaeopteryx",
+    "price": 1300,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 8,
+    "name": "Peking Man",
+    "price": 1100,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 9,
+    "name": "Shark tooth",
+    "price": 1000,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 10,
+    "name": "Trilobite",
+    "price": 1300,
+    "group": "-",
+    "score": 300,
+    "size": "1.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 11,
+    "name": "T-rex skull",
+    "price": 6000,
+    "group": "T. Rex",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 12,
+    "name": "T-rex torso",
+    "price": 5500,
+    "group": "T. Rex",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 13,
+    "name": "T-rex tail",
+    "price": 5500,
+    "group": "T. Rex",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 14,
     "name": "Tricera skull",
     "price": 5500,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/3/3a/Tricera_Skull_PG_Model.png/64px-Tricera_Skull_PG_Model.png"
+    "size": "2.0 x 2.0",
+    "image": ""
   },
   {
-    "id": 2,
+    "id": 15,
     "name": "Tricera torso",
     "price": 5000,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/8/8c/Tricera_Torso_PG_Model.png/64px-Tricera_Torso_PG_Model.png"
+    "size": "2.0 x 2.0",
+    "image": ""
   },
   {
-    "id": 3,
+    "id": 16,
     "name": "Tricera tail",
     "price": 4500,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/e/eb/Tricera_Tail_PG_Model.png/64px-Tricera_Tail_PG_Model.png"
+    "size": "2.0 x 2.0",
+    "image": ""
   },
   {
-    "id": 4,
-    "name": "T-rex skull",
-    "price": 6000,
-    "group": "Tyrannosaurus",
+    "id": 17,
+    "name": "Mammoth skull",
+    "price": 3000,
+    "group": "Mammoth",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/2/29/T-Rex_Skull_PG_Model.png/64px-T-Rex_Skull_PG_Model.png"
+    "size": "2.0 x 2.0",
+    "image": ""
   },
   {
-    "id": 5,
-    "name": "T-rex torso",
-    "price": 5500,
-    "group": "Tyrannosaurus",
+    "id": 18,
+    "name": "Mammoth torso",
+    "price": 2500,
+    "group": "Mammoth",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/7/70/T-Rex_Torso_PG_Model.png/64px-T-Rex_Torso_PG_Model.png"
+    "size": "2.0 x 2.0",
+    "image": ""
   },
   {
-    "id": 6,
-    "name": "T-rex tail",
+    "id": 19,
+    "name": "Ankylo skull",
+    "price": 3000,
+    "group": "Ankylosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 20,
+    "name": "Ankylo torso",
+    "price": 3000,
+    "group": "Ankylosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 21,
+    "name": "Ankylo tail",
+    "price": 2500,
+    "group": "Ankylosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 22,
+    "name": "Apato skull",
     "price": 5000,
-    "group": "Tyrannosaurus",
+    "group": "Apatosaur",
     "score": 1000,
-    "size": "2x2",
-    "image": "https://dodo.ac/np/images/thumb/d/d9/T-Rex_Tail_PG_Model.png/64px-T-Rex_Tail_PG_Model.png"
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 23,
+    "name": "Apato torso",
+    "price": 4500,
+    "group": "Apatosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 24,
+    "name": "Apato tail",
+    "price": 4000,
+    "group": "Apatosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 25,
+    "name": "Dimetrodon skull",
+    "price": 5500,
+    "group": "Dimetrodon",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 26,
+    "name": "Dimetrodon torso",
+    "price": 5000,
+    "group": "Dimetrodon",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 27,
+    "name": "Dimetrodon tail",
+    "price": 4500,
+    "group": "Dimetrodon",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 28,
+    "name": "Iguanodon skull",
+    "price": 4000,
+    "group": "Iguanodon",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 29,
+    "name": "Iguanodon torso",
+    "price": 3500,
+    "group": "Iguanodon",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 30,
+    "name": "Iguanodon tail",
+    "price": 3000,
+    "group": "Iguanodon",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 31,
+    "name": "Sabertooth skull",
+    "price": 2500,
+    "group": "Sabretooth Tiger",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 32,
+    "name": "Sabertooth torso",
+    "price": 2000,
+    "group": "Sabretooth Tiger",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 33,
+    "name": "Pachy skull",
+    "price": 4000,
+    "group": "Pachycephalosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 34,
+    "name": "Pachy torso",
+    "price": 3500,
+    "group": "Pachycephalosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 35,
+    "name": "Pachy tail",
+    "price": 3000,
+    "group": "Pachycephalosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 36,
+    "name": "Parasaur skull",
+    "price": 3500,
+    "group": "Parasaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 37,
+    "name": "Parasaur torso",
+    "price": 3500,
+    "group": "Parasaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 38,
+    "name": "Parasaur tail",
+    "price": 2500,
+    "group": "Parasaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 39,
+    "name": "Seismo skull",
+    "price": 5000,
+    "group": "Seismosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 40,
+    "name": "Seismo chest",
+    "price": 4500,
+    "group": "Seismosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 41,
+    "name": "Seismo hip",
+    "price": 4000,
+    "group": "Seismosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 42,
+    "name": "Seismo tail",
+    "price": 4500,
+    "group": "Seismosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 43,
+    "name": "Plesio skull",
+    "price": 4000,
+    "group": "Plesiosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 44,
+    "name": "Plesio neck",
+    "price": 4500,
+    "group": "Plesiosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 45,
+    "name": "Plesio torso",
+    "price": 4500,
+    "group": "Plesiosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 46,
+    "name": "Stego skull",
+    "price": 5000,
+    "group": "Stegosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 47,
+    "name": "Stego torso",
+    "price": 4000,
+    "group": "Stegosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 48,
+    "name": "Stego tail",
+    "price": 4000,
+    "group": "Stegosaur",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
+  },
+  {
+    "id": 49,
+    "name": "Ptera skull",
+    "price": 4000,
+    "group": "Pteranodon",
+    "score": 1000,
+    "size": "2.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 50,
+    "name": "Ptera body",
+    "price": 4000,
+    "group": "Pteranodon",
+    "score": 1000,
+    "size": "2.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 51,
+    "name": "Ptera left wing",
+    "price": 4500,
+    "group": "Pteranodon",
+    "score": 1000,
+    "size": "2.0 x 1.0",
+    "image": ""
+  },
+  {
+    "id": 52,
+    "name": "Ptera right wing",
+    "price": 4500,
+    "group": "Pteranodon",
+    "score": 1000,
+    "size": "2.0 x 2.0",
+    "image": ""
   }
 ]

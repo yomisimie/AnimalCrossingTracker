@@ -6,7 +6,7 @@
     "price": 5500,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "price": 5000,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "price": 4500,
     "group": "Triceratops",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "price": 6000,
     "group": "Tyrannosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "price": 5500,
     "group": "Tyrannosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "price": 5000,
     "group": "Tyrannosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "price": 5000,
     "group": "Apatosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "price": 4500,
     "group": "Apatosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "price": 4000,
     "group": "Apatosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "price": 5000,
     "group": "Stegosaurus",
     "score": 1000,
-    "size": "2.0 x 1.0"
+    "size": "https://dodo.ac/np/images/2/28/Size_2.0_x_1.0.png"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "price": 4500,
     "group": "Stegosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "price": 4000,
     "group": "Stegosaurus",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "price": 4000,
     "group": "Pteranodon",
     "score": 1000,
-    "size": "2.0 x 1.0"
+    "size": "https://dodo.ac/np/images/2/28/Size_2.0_x_1.0.png"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "price": 4500,
     "group": "Pteranodon",
     "score": 1000,
-    "size": "2.0 x 1.0"
+    "size": "https://dodo.ac/np/images/2/28/Size_2.0_x_1.0.png"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "price": 4500,
     "group": "Pteranodon",
     "score": 1000,
-    "size": "2.0 x 1.0"
+    "size": "https://dodo.ac/np/images/2/28/Size_2.0_x_1.0.png"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "price": 4000,
     "group": "Plesiosaur",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "price": 4500,
     "group": "Plesiosaur",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "price": 4500,
     "group": "Plesiosaur",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "price": 3000,
     "group": "Mammoth",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 20,
@@ -177,7 +177,7 @@
     "price": 2500,
     "group": "Mammoth",
     "score": 1000,
-    "size": "2.0 x 2.0"
+    "size": "https://dodo.ac/np/images/b/b0/Size_2.0_x_2.0.png"
   },
   {
     "id": 21,
@@ -186,7 +186,7 @@
     "price": 1200,
     "group": "-",
     "score": 300,
-    "size": "1.0 x 1.0"
+    "size": "https://dodo.ac/np/images/3/3f/Size_1.0_x_1.0.png"
   },
   {
     "id": 22,
@@ -195,7 +195,7 @@
     "price": 1000,
     "group": "-",
     "score": 300,
-    "size": "1.0 x 1.0"
+    "size": "https://dodo.ac/np/images/3/3f/Size_1.0_x_1.0.png"
   },
   {
     "id": 23,
@@ -204,7 +204,7 @@
     "price": 1100,
     "group": "-",
     "score": 300,
-    "size": "1.0 x 1.0"
+    "size": "https://dodo.ac/np/images/3/3f/Size_1.0_x_1.0.png"
   },
   {
     "id": 24,
@@ -213,7 +213,7 @@
     "price": 1400,
     "group": "-",
     "score": 300,
-    "size": "1.0 x 1.0"
+    "size": "https://dodo.ac/np/images/3/3f/Size_1.0_x_1.0.png"
   },
   {
     "id": 25,
@@ -222,6 +222,6 @@
     "price": 1300,
     "group": "-",
     "score": 300,
-    "size": "1.0 x 1.0"
+    "size": "https://dodo.ac/np/images/3/3f/Size_1.0_x_1.0.png"
   }
 ]

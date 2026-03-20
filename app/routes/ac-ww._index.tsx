@@ -3,11 +3,11 @@ import GameMenu from "~/components/GameMenu";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Animal Crossing (GCN)" },
+    { title: "Animal Crossing: Wild World (DS)" },
     { name: "description", content: "Track your progress!" },
   ];
 };
 
-export default function AC() {
-  return <GameMenu homeLink="/" logoLink="/ac" />;
+export default function ACWW() {
+  return <GameMenu homeLink="/" logoLink="/ac-ww" />;
 }

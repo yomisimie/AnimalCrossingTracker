@@ -6,8 +6,17 @@
     "price": 120,
     "shadow": "Small",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 2,
@@ -16,8 +25,17 @@
     "price": 150,
     "shadow": "Medium",
     "location": "Lake",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 3,
@@ -26,8 +44,17 @@
     "price": 300,
     "shadow": "Large",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 4,
@@ -36,8 +63,17 @@
     "price": 2000,
     "shadow": "Large",
     "location": "River",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 5,
@@ -46,8 +82,17 @@
     "price": 200,
     "shadow": "Large",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 6,
@@ -56,8 +101,17 @@
     "price": 200,
     "shadow": "Medium",
     "location": "River",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 7,
@@ -66,8 +120,17 @@
     "price": 200,
     "shadow": "Large",
     "location": "River",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [5, 6, 7, 8, 9, 10]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [5, 6, 7, 8, 9, 10]
+      }
+    ]
   },
   {
     "id": 8,
@@ -76,8 +139,17 @@
     "price": 3000,
     "shadow": "Very Large",
     "location": "Lake",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [7, 8, 9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [7, 8, 9]
+      }
+    ]
   },
   {
     "id": 9,
@@ -86,8 +158,17 @@
     "price": 200,
     "shadow": "Small",
     "location": "River",
-    "time": [{ "from": 9, "to": 16 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 10,
@@ -96,8 +177,17 @@
     "price": 1300,
     "shadow": "Tiny",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 11, 12]
+      }
+    ]
   },
   {
     "id": 11,
@@ -106,8 +196,17 @@
     "price": 300,
     "shadow": "Tiny",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [3, 4, 5]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [3, 4, 5]
+      }
+    ]
   },
   {
     "id": 12,
@@ -116,8 +215,17 @@
     "price": 120,
     "shadow": "Small",
     "location": "River",
-    "time": [{ "from": 9, "to": 16 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 13,
@@ -126,8 +234,17 @@
     "price": 200,
     "shadow": "Small",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 14,
@@ -136,8 +253,17 @@
     "price": 300,
     "shadow": "Medium",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 15,
@@ -146,8 +272,17 @@
     "price": 3000,
     "shadow": "Large",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 16,
@@ -156,8 +291,17 @@
     "price": 6500,
     "shadow": "Very Large",
     "location": "Lake",
-    "time": [{ "from": 9, "to": 16 }],
-    "months": [6, 7, 8]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ],
+        "month": [6, 7, 8]
+      }
+    ]
   },
   {
     "id": 17,
@@ -166,8 +310,17 @@
     "price": 2000,
     "shadow": "Medium",
     "location": "River",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [6, 7, 8, 9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [6, 7, 8, 9]
+      }
+    ]
   },
   {
     "id": 18,
@@ -176,8 +329,17 @@
     "price": 300,
     "shadow": "Small",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 19,
@@ -186,8 +348,17 @@
     "price": 300,
     "shadow": "Tiny",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 12]
+      }
+    ]
   },
   {
     "id": 20,
@@ -196,8 +367,17 @@
     "price": 1300,
     "shadow": "Small",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [7, 8, 9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [7, 8, 9]
+      }
+    ]
   },
   {
     "id": 21,
@@ -206,11 +386,21 @@
     "price": 1300,
     "shadow": "Small",
     "location": "River",
-    "time": [
-      { "from": 4, "to": 9 },
-      { "from": 16, "to": 21 }
-    ],
-    "months": [3, 4, 5, 6, 9, 10, 11]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 4,
+            "to": 9
+          },
+          {
+            "from": 16,
+            "to": 21
+          }
+        ],
+        "month": [3, 4, 5, 6, 9, 10, 11]
+      }
+    ]
   },
   {
     "id": 22,
@@ -219,11 +409,21 @@
     "price": 650,
     "shadow": "Medium",
     "location": "River",
-    "time": [
-      { "from": 4, "to": 9 },
-      { "from": 16, "to": 21 }
-    ],
-    "months": [3, 4, 5, 6, 9, 10, 11]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 4,
+            "to": 9
+          },
+          {
+            "from": 16,
+            "to": 21
+          }
+        ],
+        "month": [3, 4, 5, 6, 9, 10, 11]
+      }
+    ]
   },
   {
     "id": 23,
@@ -232,11 +432,21 @@
     "price": 10000,
     "shadow": "Large",
     "location": "Waterfall",
-    "time": [
-      { "from": 4, "to": 9 },
-      { "from": 16, "to": 21 }
-    ],
-    "months": [3, 4, 5, 6, 9, 10, 11]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 4,
+            "to": 9
+          },
+          {
+            "from": 16,
+            "to": 21
+          }
+        ],
+        "month": [3, 4, 5, 6, 9, 10, 11]
+      }
+    ]
   },
   {
     "id": 24,
@@ -245,8 +455,17 @@
     "price": 15000,
     "shadow": "Very Large",
     "location": "River",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [12, 1, 2]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [12, 1, 2]
+      }
+    ]
   },
   {
     "id": 25,
@@ -255,8 +474,17 @@
     "price": 650,
     "shadow": "Large",
     "location": "River (mouth)",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [9]
+      }
+    ]
   },
   {
     "id": 26,
@@ -265,8 +493,17 @@
     "price": 1300,
     "shadow": "Tiny",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 27,
@@ -275,8 +512,17 @@
     "price": 1300,
     "shadow": "Tiny",
     "location": "River",
-    "time": [{ "from": 9, "to": 16 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 28,
@@ -285,8 +531,17 @@
     "price": 1300,
     "shadow": "Tiny",
     "location": "River",
-    "time": [{ "from": 9, "to": 16 }],
-    "months": [4, 5, 6, 7, 8, 9, 10, 11]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 9,
+            "to": 16
+          }
+        ],
+        "month": [4, 5, 6, 7, 8, 9, 10, 11]
+      }
+    ]
   },
   {
     "id": 29,
@@ -295,8 +550,17 @@
     "price": 3000,
     "shadow": "Small",
     "location": "River",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [5, 6, 7, 8, 9, 10]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [5, 6, 7, 8, 9, 10]
+      }
+    ]
   },
   {
     "id": 30,
@@ -305,11 +569,21 @@
     "price": 6500,
     "shadow": "Small",
     "location": "River",
-    "time": [
-      { "from": 21, "to": 4 },
-      { "from": 9, "to": 16 }
-    ],
-    "months": [6, 7, 8, 9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 21,
+            "to": 4
+          },
+          {
+            "from": 9,
+            "to": 16
+          }
+        ],
+        "month": [6, 7, 8, 9]
+      }
+    ]
   },
   {
     "id": 31,
@@ -318,11 +592,21 @@
     "price": 10000,
     "shadow": "Medium",
     "location": "River",
-    "time": [
-      { "from": 4, "to": 9 },
-      { "from": 16, "to": 21 }
-    ],
-    "months": [6, 7, 8, 9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 4,
+            "to": 9
+          },
+          {
+            "from": 16,
+            "to": 21
+          }
+        ],
+        "month": [6, 7, 8, 9]
+      }
+    ]
   },
   {
     "id": 32,
@@ -331,8 +615,17 @@
     "price": 15000,
     "shadow": "Very Large",
     "location": "Sea (raining)",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 33,
@@ -341,8 +634,17 @@
     "price": 250,
     "shadow": "Small",
     "location": "Pond",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [4, 5, 6, 7, 8, 9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [4, 5, 6, 7, 8, 9]
+      }
+    ]
   },
   {
     "id": 34,
@@ -351,8 +653,17 @@
     "price": 250,
     "shadow": "Tiny",
     "location": "Pond",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [5, 6, 7, 8]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [5, 6, 7, 8]
+      }
+    ]
   },
   {
     "id": 35,
@@ -361,8 +672,17 @@
     "price": 300,
     "shadow": "Tiny",
     "location": "River",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [4, 5, 6, 7, 8]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [4, 5, 6, 7, 8]
+      }
+    ]
   },
   {
     "id": 36,
@@ -371,8 +691,17 @@
     "price": 100,
     "shadow": "Medium",
     "location": "Sea",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [8]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [8]
+      }
+    ]
   },
   {
     "id": 37,
@@ -381,8 +710,17 @@
     "price": 120,
     "shadow": "Large",
     "location": "Sea",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 38,
@@ -391,8 +729,17 @@
     "price": 3000,
     "shadow": "Large",
     "location": "Sea",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      }
+    ]
   },
   {
     "id": 39,
@@ -401,8 +748,17 @@
     "price": 5000,
     "shadow": "Large",
     "location": "Sea",
-    "time": [{ "from": 0, "to": 24 }],
-    "months": [3, 4, 5, 6, 9, 10, 11]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 0,
+            "to": 24
+          }
+        ],
+        "month": [3, 4, 5, 6, 9, 10, 11]
+      }
+    ]
   },
   {
     "id": 40,
@@ -411,7 +767,16 @@
     "price": 10000,
     "shadow": "Huge",
     "location": "River",
-    "time": [{ "from": 16, "to": 9 }],
-    "months": [7, 8, 9]
+    "availability": [
+      {
+        "time": [
+          {
+            "from": 16,
+            "to": 9
+          }
+        ],
+        "month": [7, 8, 9]
+      }
+    ]
   }
 ]
