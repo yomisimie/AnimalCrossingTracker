@@ -4,7 +4,7 @@
     "name": "Crucian carp",
     "image": "https://dodo.ac/np/images/0/07/Crucian_Carp_PG_Icon.png",
     "price": 120,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -23,7 +23,7 @@
     "name": "Brook trout",
     "image": "https://dodo.ac/np/images/0/0b/Brook_Trout_PG_Icon.png",
     "price": 150,
-    "shadow": "Medium",
+    "size": "Medium",
     "location": "Lake",
     "availability": [
       {
@@ -42,7 +42,7 @@
     "name": "Carp",
     "image": "https://dodo.ac/np/images/d/d4/Carp_PG_Icon.png",
     "price": 300,
-    "shadow": "Large",
+    "size": "Large",
     "location": "River",
     "availability": [
       {
@@ -61,7 +61,7 @@
     "name": "Koi",
     "image": "https://dodo.ac/np/images/9/96/Koi_PG_Icon.png",
     "price": 2000,
-    "shadow": "Large",
+    "size": "Large",
     "location": "River",
     "availability": [
       {
@@ -80,7 +80,7 @@
     "name": "Barbel steed",
     "image": "https://dodo.ac/np/images/f/f6/Barbel_Steed_PG_Icon.png",
     "price": 200,
-    "shadow": "Large",
+    "size": "Large",
     "location": "River",
     "availability": [
       {
@@ -99,7 +99,7 @@
     "name": "Dace",
     "image": "https://dodo.ac/np/images/c/cc/Dace_PG_Icon.png",
     "price": 200,
-    "shadow": "Medium",
+    "size": "Medium",
     "location": "River",
     "availability": [
       {
@@ -118,7 +118,7 @@
     "name": "Catfish",
     "image": "https://dodo.ac/np/images/7/75/Catfish_PG_Icon.png",
     "price": 200,
-    "shadow": "Large",
+    "size": "Large",
     "location": "River",
     "availability": [
       {
@@ -137,7 +137,7 @@
     "name": "Giant catfish",
     "image": "https://dodo.ac/np/images/7/78/Giant_Catfish_PG_Icon.png",
     "price": 3000,
-    "shadow": "Very Large",
+    "size": "Very Large",
     "location": "Lake",
     "availability": [
       {
@@ -156,7 +156,7 @@
     "name": "Pale chub",
     "image": "https://dodo.ac/np/images/6/6a/Pale_Chub_PG_Icon.png",
     "price": 200,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -175,7 +175,7 @@
     "name": "Bitterling",
     "image": "https://dodo.ac/np/images/b/b9/Bitterling_PG_Icon.png",
     "price": 1300,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "River",
     "availability": [
       {
@@ -194,7 +194,7 @@
     "name": "Loach",
     "image": "https://dodo.ac/np/images/1/1f/Loach_PG_Icon.png",
     "price": 300,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "River",
     "availability": [
       {
@@ -213,7 +213,7 @@
     "name": "Bluegill",
     "image": "https://dodo.ac/np/images/1/10/Bluegill_PG_Icon.png",
     "price": 120,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -232,7 +232,7 @@
     "name": "Small bass",
     "image": "https://dodo.ac/np/images/6/65/Small_Bass_PG_Icon.png",
     "price": 200,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -251,7 +251,7 @@
     "name": "Bass",
     "image": "https://dodo.ac/np/images/3/30/Bass_PG_Inv_Icon.png",
     "price": 300,
-    "shadow": "Medium",
+    "size": "Medium",
     "location": "River",
     "availability": [
       {
@@ -270,7 +270,7 @@
     "name": "Large bass",
     "image": "https://dodo.ac/np/images/0/0f/Large_Bass_PG_Icon.png",
     "price": 3000,
-    "shadow": "Large",
+    "size": "Large",
     "location": "River",
     "availability": [
       {
@@ -289,7 +289,7 @@
     "name": "Giant snakehead",
     "image": "https://dodo.ac/np/images/a/a9/Giant_Snakehead_PG_Icon.png",
     "price": 6500,
-    "shadow": "Very Large",
+    "size": "Very Large",
     "location": "Lake",
     "availability": [
       {
@@ -308,7 +308,7 @@
     "name": "Eel",
     "image": "https://dodo.ac/np/images/7/77/Eel_PG_Icon.png",
     "price": 2000,
-    "shadow": "Medium",
+    "size": "Medium",
     "location": "River",
     "availability": [
       {
@@ -327,7 +327,7 @@
     "name": "Freshwater goby",
     "image": "https://dodo.ac/np/images/0/0a/Freshwater_Goby_PG_Icon.png",
     "price": 300,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -346,7 +346,7 @@
     "name": "Pond smelt",
     "image": "https://dodo.ac/np/images/c/c5/Pond_Smelt_PG_Icon.png",
     "price": 300,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "River",
     "availability": [
       {
@@ -365,7 +365,7 @@
     "name": "Sweetfish",
     "image": "https://dodo.ac/np/images/4/4b/Sweetfish_PG_Icon.png",
     "price": 1300,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -384,7 +384,7 @@
     "name": "Cherry salmon",
     "image": "https://dodo.ac/np/images/d/da/Cherry_Salmon_PG_Icon.png",
     "price": 1300,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -407,7 +407,7 @@
     "name": "Rainbow trout",
     "image": "https://dodo.ac/np/images/8/80/Rainbow_Trout_PG_Icon.png",
     "price": 650,
-    "shadow": "Medium",
+    "size": "Medium",
     "location": "River",
     "availability": [
       {
@@ -430,7 +430,7 @@
     "name": "Large char",
     "image": "https://dodo.ac/np/images/9/91/Large_Char_PG_Icon.png",
     "price": 10000,
-    "shadow": "Large",
+    "size": "Large",
     "location": "Waterfall",
     "availability": [
       {
@@ -453,7 +453,7 @@
     "name": "Stringfish",
     "image": "https://dodo.ac/np/images/4/46/Stringfish_PG_Icon.png",
     "price": 15000,
-    "shadow": "Very Large",
+    "size": "Very Large",
     "location": "River",
     "availability": [
       {
@@ -472,7 +472,7 @@
     "name": "Salmon",
     "image": "https://dodo.ac/np/images/0/0f/Salmon_PG_Icon.png",
     "price": 650,
-    "shadow": "Large",
+    "size": "Large",
     "location": "River (mouth)",
     "availability": [
       {
@@ -491,7 +491,7 @@
     "name": "Goldfish",
     "image": "https://dodo.ac/np/images/c/c8/Goldfish_PG_Icon.png",
     "price": 1300,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "River",
     "availability": [
       {
@@ -510,7 +510,7 @@
     "name": "Popeyed goldfish",
     "image": "https://dodo.ac/np/images/d/d0/Popeyed_Goldfish_PG_Icon.png",
     "price": 1300,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "River",
     "availability": [
       {
@@ -529,7 +529,7 @@
     "name": "Guppy",
     "image": "https://dodo.ac/np/images/d/d3/Guppy_PG_Icon.png",
     "price": 1300,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "River",
     "availability": [
       {
@@ -548,7 +548,7 @@
     "name": "Angelfish",
     "image": "https://dodo.ac/np/images/6/64/Angelfish_PG_Icon.png",
     "price": 3000,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -567,7 +567,7 @@
     "name": "Piranha",
     "image": "https://dodo.ac/np/images/d/df/Piranha_PG_Icon.png",
     "price": 6500,
-    "shadow": "Small",
+    "size": "Small",
     "location": "River",
     "availability": [
       {
@@ -590,7 +590,7 @@
     "name": "Arowana",
     "image": "https://dodo.ac/np/images/6/64/Arowana_PG_Icon.png",
     "price": 10000,
-    "shadow": "Medium",
+    "size": "Medium",
     "location": "River",
     "availability": [
       {
@@ -613,7 +613,7 @@
     "name": "Coelacanth",
     "image": "https://dodo.ac/np/images/f/ff/Coelacanth_PG_Icon.png",
     "price": 15000,
-    "shadow": "Very Large",
+    "size": "Very Large",
     "location": "Sea (raining)",
     "availability": [
       {
@@ -632,7 +632,7 @@
     "name": "Crawfish",
     "image": "https://dodo.ac/np/images/6/63/Crawfish_PG_Icon.png",
     "price": 250,
-    "shadow": "Small",
+    "size": "Small",
     "location": "Pond",
     "availability": [
       {
@@ -651,7 +651,7 @@
     "name": "Frog",
     "image": "https://dodo.ac/np/images/c/cc/Frog_PG_Icon.png",
     "price": 250,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "Pond",
     "availability": [
       {
@@ -670,7 +670,7 @@
     "name": "Killifish",
     "image": "https://dodo.ac/np/images/c/c0/Killifish_PG_Icon.png",
     "price": 300,
-    "shadow": "Tiny",
+    "size": "Tiny",
     "location": "River",
     "availability": [
       {
@@ -689,7 +689,7 @@
     "name": "Jellyfish",
     "image": "https://dodo.ac/np/images/5/59/Jellyfish_PG_Icon.png",
     "price": 100,
-    "shadow": "Medium",
+    "size": "Medium",
     "location": "Sea",
     "availability": [
       {
@@ -708,7 +708,7 @@
     "name": "Sea bass",
     "image": "https://dodo.ac/np/images/f/f8/Sea_Bass_PG_Icon.png",
     "price": 120,
-    "shadow": "Large",
+    "size": "Large",
     "location": "Sea",
     "availability": [
       {
@@ -727,7 +727,7 @@
     "name": "Red snapper",
     "image": "https://dodo.ac/np/images/1/12/Red_Snapper_PG_Icon.png",
     "price": 3000,
-    "shadow": "Large",
+    "size": "Large",
     "location": "Sea",
     "availability": [
       {
@@ -746,7 +746,7 @@
     "name": "Barred knifejaw",
     "image": "https://dodo.ac/np/images/c/cf/Barred_Knifejaw_PG_Icon.png",
     "price": 5000,
-    "shadow": "Large",
+    "size": "Large",
     "location": "Sea",
     "availability": [
       {
@@ -765,7 +765,7 @@
     "name": "Arapaima",
     "image": "https://dodo.ac/np/images/f/fd/Arapaima_PG_Icon.png",
     "price": 10000,
-    "shadow": "Huge",
+    "size": "Huge",
     "location": "River",
     "availability": [
       {

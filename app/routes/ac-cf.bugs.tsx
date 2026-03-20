@@ -19,6 +19,7 @@ export default function ACCFBugs() {
       months={months}
       caughtId="ACCF-caughtBugs"
       donatedId="ACCF-donatedBugs"
+      backLink="/ac-cf"
     />
   );
 }

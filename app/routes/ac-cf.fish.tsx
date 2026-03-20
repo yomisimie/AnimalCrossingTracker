@@ -19,6 +19,7 @@ export default function ACCFFish() {
       months={months}
       caughtId="ACCF-caughtFish"
       donatedId="ACCF-donatedFish"
+      backLink="/ac-cf"
     />
   );
 }

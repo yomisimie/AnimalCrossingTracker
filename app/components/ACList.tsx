@@ -22,6 +22,7 @@ type BaseItem = {
   weather?: string;
   size?: string;
   rarity?: string;
+  color?: string[];
   availability?: Availability[];
 };
 
@@ -68,6 +69,22 @@ export default function ACList({
   const hasCaughtTracking = type !== 'fossils';
   const hasFossilSizeColumn = type === 'fossils';
   const usesWeatherColumn = type === "bugs" && backLink === "/ac";
+  const usesShadowSize = type === "fish" && backLink === "/ac";
+  const usesRarity = type === "bugs" && backLink === "/ac-cf";
+  const fossilColorClassMap: Record<string, string> = {
+    black: "bg-black text-white border-black",
+    white: "bg-white text-black border-base-300",
+    gray: "bg-gray-500 text-white border-gray-500",
+    grey: "bg-gray-500 text-white border-gray-500",
+    brown: "bg-amber-700 text-white border-amber-700",
+    red: "bg-red-500 text-white border-red-500",
+    orange: "bg-orange-500 text-white border-orange-500",
+    yellow: "bg-yellow-400 text-black border-yellow-400",
+    green: "bg-green-500 text-white border-green-500",
+    blue: "bg-blue-500 text-white border-blue-500",
+    purple: "bg-purple-500 text-white border-purple-500",
+    pink: "bg-pink-400 text-white border-pink-400",
+  };
 
   useEffect(() => {
     let filteredData = rawData;
@@ -280,11 +297,13 @@ export default function ACList({
               {hasTimeMonthFilters && (
                 <>
                   <th>Location</th>
-                  <th>{usesWeatherColumn ? "Weather" : "Rarity"}</th>
+                  {usesWeatherColumn && <th>Weather</th>}
+                  {usesRarity && <th>Rarity</th>}
+                  {usesShadowSize && <th>Shadow Size</th>}
                   <th>Availability</th>
                 </>
               )}
-              {hasFossilSizeColumn && <th>Size</th>}
+              {hasFossilSizeColumn && <><th>Size</th><th>Color</th></>}
               {hasCaughtTracking && <th>Caught</th>}
               <th>Donated</th>
             </tr>
@@ -317,9 +336,9 @@ export default function ACList({
                 {hasTimeMonthFilters && (
                   <>
                     <td className="max-w-52">{item.location}</td>
-                    <td className="max-w-52">
-                      {usesWeatherColumn ? item.weather : rarity[item.rarity ?? 0]}
-                    </td>
+                      {usesWeatherColumn && <td className="max-w-52">{item.weather}</td>}
+                      {usesRarity && <td className="max-w-52">{item.rarity}</td>}
+                      {usesShadowSize && <td className="max-w-52">{item.size}</td>}
                     <td>
                       <ul className="flex flex-col gap-1">
                         {item.availability?.map((a, index) => (
@@ -366,9 +385,26 @@ export default function ACList({
                   </>
                 )}
                 {hasFossilSizeColumn && (
+                  <>
                   <td className="flex justify-center">
                     {item.size ? <img src={item.size} alt="" /> : "-"}
                   </td>
+                  <td >
+                    {item.color && item.color.length > 0 ? (
+                      <span className="flex flex-col align-center justify-center items-center gap-1">
+                        {item.color.map((color) => (
+                          <span
+                            key={color}
+                            className={`badge ${fossilColorClassMap[color.trim().toLowerCase()] ?? "badge-neutral"} w-16`}
+                            title={color}
+                          >{color}</span>
+                        ))}
+                      </span>
+                    ) : (
+                      "-"
+                    )}
+                  </td>
+                  </>
                 )}
                 {hasCaughtTracking && (
                   <td>
