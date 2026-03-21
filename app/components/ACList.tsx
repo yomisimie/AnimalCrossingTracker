@@ -1,7 +1,16 @@
 import { Link } from "@remix-run/react";
 import { useLocalStorage } from "usehooks-ts";
 import { useEffect, useState } from "react";
-import rarity from "~/const/rarity";
+import {
+  ArrowDownOnSquareStackIcon,
+  ArrowUpIcon,
+  ArrowUpOnSquareStackIcon,
+  CalendarIcon,
+  ChevronDownIcon,
+  ClockIcon,
+  MagnifyingGlassIcon,
+  XCircleIcon,
+} from "@heroicons/react/16/solid";
 
 type TimeRange = {
   from: number;
@@ -33,7 +42,7 @@ type Month = {
   letter: string;
 };
 
-type ItemType = 'bugs' | 'fish' | 'fossils';
+type ItemType = "bugs" | "fish" | "fossils";
 
 type ACListProps = {
   title: string;
@@ -58,6 +67,9 @@ export default function ACList({
   const [selectedTime, setSelectedTime] = useState<number | null>(null);
   const [selectedMonths, setSelectedMonths] = useState<number[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
+  const [hideCaught, setHideCaught] = useState<boolean>(false);
+  const [hideDonated, setHideDonated] = useState<boolean>(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const [caughtItems, setCaughtItems, removeCaughtItems] = useLocalStorage<
     number[]
   >(caughtId || "caught", []);
@@ -65,12 +77,18 @@ export default function ACList({
     number[]
   >(donatedId, []);
 
-  const hasTimeMonthFilters = type !== 'fossils';
-  const hasCaughtTracking = type !== 'fossils';
-  const hasFossilSizeColumn = type === 'fossils';
+  const hasTimeMonthFilters = type !== "fossils";
+  const hasCaughtTracking = type !== "fossils";
+  const hasFossilSizeColumn = type === "fossils";
   const usesWeatherColumn = type === "bugs" && backLink === "/ac";
   const usesShadowSize = type === "fish" && backLink === "/ac";
   const usesRarity = type === "bugs" && backLink === "/ac-cf";
+  const donatedCount = rawData.filter((item) =>
+    donatedItems.includes(item.id),
+  ).length;
+  const caughtCount = rawData.filter((item) =>
+    caughtItems.includes(item.id),
+  ).length;
   const fossilColorClassMap: Record<string, string> = {
     black: "bg-black text-white border-black",
     white: "bg-white text-black border-base-300",
@@ -85,6 +103,17 @@ export default function ACList({
     purple: "bg-purple-500 text-white border-purple-500",
     pink: "bg-pink-400 text-white border-pink-400",
   };
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowScrollTop(window.scrollY > 150);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     let filteredData = rawData;
@@ -117,16 +146,158 @@ export default function ACList({
     }
 
     setData(filteredData);
-  }, [selectedTime, selectedMonths, searchTerm, rawData, months, hasTimeMonthFilters]);
+  }, [
+    selectedTime,
+    selectedMonths,
+    searchTerm,
+    rawData,
+    months,
+    hasTimeMonthFilters,
+  ]);
+
+  const filterCaughtItems = (checked: boolean) => {
+    setHideCaught(checked);
+    if (checked) {
+      setData((prev) => prev.filter((item) => !caughtItems.includes(item.id)));
+    } else {
+      setData(rawData);
+    }
+  };
+
+  const filterDonatedItems = (checked: boolean) => {
+    setHideDonated(checked);
+    filterCaughtItems(checked);
+    if (checked) {
+      setData((prev) => prev.filter((item) => !donatedItems.includes(item.id)));
+    } else {
+      setData(rawData);
+    }
+  };
+
+  const exportSavedData = () => {
+    const payload = {
+      title,
+      type,
+      exportedAt: new Date().toISOString(),
+      data: {
+        donated: donatedItems,
+        ...(hasCaughtTracking && caughtId ? { caught: caughtItems } : {}),
+      },
+    };
+
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {
+      type: "application/json",
+    });
+
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    const date = new Date().toISOString().slice(0, 10);
+    link.href = url;
+    link.download = `${type}-saved-data-${date}.json`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  };
+
+  const loadSaveData = () => {
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = "application/json";
+    input.onchange = (e) => {
+      const file = (e.target as HTMLInputElement).files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          const json = JSON.parse(event.target?.result as string);
+          const validItemIds = new Set(rawData.map((item) => item.id));
+          const normalizeIds = (value: unknown): number[] =>
+            Array.isArray(value)
+              ? value.filter(
+                  (id): id is number =>
+                    typeof id === "number" && validItemIds.has(id),
+                )
+              : [];
+
+          const importedDonatedItems = normalizeIds(json?.data?.donated);
+          const importedCaughtItems = normalizeIds(json?.data?.caught);
+
+          setDonatedItems([...new Set(importedDonatedItems)]);
+
+          if (hasCaughtTracking) {
+            setCaughtItems([...new Set(importedCaughtItems)]);
+          }
+        } catch (error) {
+          console.error("Error parsing JSON:", error);
+        }
+      };
+      reader.readAsText(file);
+    };
+    input.click();
+  };
+
   return (
     <>
       <div className="flex py-4 border-neutral-500 border-opacity-25 border-b-2">
-        <Link to={backLink} className="btn btn-primary">
-          <i className="icon-arrow-left"></i>
-        </Link>
+        <div className="flex items-start justify-start gap-2">
+          <div className="tooltip tooltip-info tooltip-bottom" data-tip="Back">
+            <Link to={backLink} className="btn btn-primary">
+              <i className="icon-arrow-left"></i>
+            </Link>
+          </div>
+          <div
+            className="tooltip tooltip-info tooltip-bottom"
+            data-tip="Export data"
+          >
+            <button
+              type="button"
+              className="btn btn-info"
+              onClick={exportSavedData}
+            >
+              <ArrowDownOnSquareStackIcon className="w-5 h-5" />
+            </button>
+          </div>
+          <div
+            className="tooltip tooltip-info tooltip-bottom"
+            data-tip="Load data"
+          >
+            <button className="btn btn-secondary" onClick={loadSaveData}>
+              <ArrowUpOnSquareStackIcon className="w-5 h-5" />
+            </button>
+          </div>
+          <div
+            className="tooltip tooltip-info tooltip-bottom"
+            data-tip="Clear data"
+          >
+            <a
+              className="btn btn-error self-end"
+              title="Clear data"
+              href="#clear_data_modal"
+            >
+              <XCircleIcon className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
         <h1 className="mx-auto text-center text-3xl font-[FinkHeavy] text-primary self-center">
           {title}
         </h1>
+        <div className="stats border border-neutral border-opacity-20">
+          <div className="stat place-items-center">
+            <div className="stat-title">Caught</div>
+            <div className="stat-value text-primary">{caughtCount}</div>
+          </div>
+          <div className="stat place-items-center">
+            <div className="stat-title">Donated</div>
+            <div className="stat-value text-primary">{donatedCount}</div>
+          </div>
+          <div className="stat place-items-center">
+            <div className="stat-title">Left</div>
+            <div className="stat-value text-primary">
+              {rawData.length - donatedCount}
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="flex justify-between gap-2 border-neutral-500 border-opacity-25 border-b-2 py-4 sticky top-0 z-10 bg-base-100">
@@ -134,20 +305,16 @@ export default function ACList({
           {hasTimeMonthFilters && (
             <>
               <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn w-32 justify-start">
-                  <i className="icon-stopwatch text-2xl"></i>
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn min-w-32 px-3 justify-start"
+                >
+                  <ClockIcon className="w-5 h-5" />
                   {selectedTime !== null
                     ? `${selectedTime.toString().padStart(2, "0")}:00`
                     : "--:--"}
-                  <svg
-                    width="12px"
-                    height="12px"
-                    className="inline-block h-2 w-2 fill-current opacity-60"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 2048 2048"
-                  >
-                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                  </svg>
+                  <ChevronDownIcon className="w-5 h-5" />
                 </div>
                 <ul className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto">
                   {Array.from({ length: 24 }, (_, i) => (
@@ -172,28 +339,27 @@ export default function ACList({
                 onClick={() => setSelectedTime(null)}
                 title="Clear time"
               >
-                <i className="icon-cancel"></i>
+                <XCircleIcon className="w-5 h-5" />
               </button>
               <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn w-28 justify-start">
-                  <i className="icon-calendar text-2xl"></i>
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn min-w-28 px-3 justify-start"
+                >
+                  <CalendarIcon className="w-5 h-5" />
                   {selectedMonths.length
                     ? selectedMonths
                         .map(
                           (monthId) =>
-                            months?.find((month) => month.id === monthId)?.shortName,
+                            months?.find((month) => month.id === monthId)
+                              ?.shortName,
                         )
                         .join(", ")
+                        .substring(0, 10) +
+                      (selectedMonths.length > 1 ? "..." : "")
                     : "---"}
-                  <svg
-                    width="12px"
-                    height="12px"
-                    className="inline-block h-2 w-2 fill-current opacity-60"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 2048 2048"
-                  >
-                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                  </svg>
+                  <ChevronDownIcon className="w-5 h-5" />
                 </div>
                 <ul className="dropdown-content bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl max-h-80 overflow-auto">
                   {months?.map((month) => (
@@ -224,7 +390,7 @@ export default function ACList({
                 onClick={() => setSelectedMonths([])}
                 title="Clear months"
               >
-                <i className="icon-cancel"></i>
+                <XCircleIcon className="w-5 h-5" />
               </button>
               <button
                 type="button"
@@ -241,6 +407,35 @@ export default function ACList({
             </>
           )}
         </div>
+        <div className="flex justify-start gap-4">
+          <label htmlFor="" className="label">
+            Hide:
+          </label>
+          {hasCaughtTracking && (
+            <label className="label">
+              <input
+                type="checkbox"
+                className="toggle toggle-primary"
+                checked={hideCaught}
+                onChange={(e) => {
+                  filterCaughtItems(e.target.checked);
+                }}
+              />
+              &nbsp;Caught
+            </label>
+          )}
+          <label className="label">
+            <input
+              type="checkbox"
+              className="toggle toggle-primary"
+              checked={hideDonated}
+              onChange={(e) => {
+                filterDonatedItems(e.target.checked);
+              }}
+            />
+            &nbsp;Donated
+          </label>
+        </div>
         <label
           className="input input-bordered flex items-center gap-2"
           aria-label="Search bugs"
@@ -252,23 +447,16 @@ export default function ACList({
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <i className="icon-magnifying-glass"></i>
+          <MagnifyingGlassIcon className="w-5 h-5 opacity-50" />
           <button onClick={() => setSearchTerm("")}>
-            <i
-              className={`icon-cancel ${
-                searchTerm ? "text-red-500 cursor-pointer" : ""
+            <XCircleIcon
+              className={`w-5 h-5 ${
+                searchTerm ? "text-red-500" : "text-gray-300"
               }`}
               title="Clear search"
-            ></i>
+            />
           </button>
         </label>
-        <a
-          className="btn btn-error self-end"
-          title="Clear data"
-          href="#clear_data_modal"
-        >
-          <i className="icon-cancel"></i>Clear data
-        </a>
       </div>
 
       {data.length === 0 ? (
@@ -303,7 +491,12 @@ export default function ACList({
                   <th>Availability</th>
                 </>
               )}
-              {hasFossilSizeColumn && <><th>Size</th><th>Color</th></>}
+              {hasFossilSizeColumn && (
+                <>
+                  <th>Size</th>
+                  <th>Color</th>
+                </>
+              )}
               {hasCaughtTracking && <th>Caught</th>}
               <th>Donated</th>
             </tr>
@@ -336,13 +529,20 @@ export default function ACList({
                 {hasTimeMonthFilters && (
                   <>
                     <td className="max-w-52">{item.location}</td>
-                      {usesWeatherColumn && <td className="max-w-52">{item.weather}</td>}
-                      {usesRarity && <td className="max-w-52">{item.rarity}</td>}
-                      {usesShadowSize && <td className="max-w-52">{item.size}</td>}
+                    {usesWeatherColumn && (
+                      <td className="max-w-52">{item.weather}</td>
+                    )}
+                    {usesRarity && <td className="max-w-52">{item.rarity}</td>}
+                    {usesShadowSize && (
+                      <td className="max-w-52">{item.size}</td>
+                    )}
                     <td>
                       <ul className="flex flex-col gap-1">
                         {item.availability?.map((a, index) => (
-                          <li key={index} className="flex justify-between">
+                          <li
+                            key={index}
+                            className="flex justify-between py-[2px] px-2 hover:bg-info/10 rounded-box"
+                          >
                             <span className="whitespace-pre-line text-left">
                               {a.time
                                 .map(
@@ -360,7 +560,11 @@ export default function ACList({
                                 {months?.map((month) => (
                                   <li
                                     key={month.name}
-                                    className="tooltip"
+                                    className={
+                                      a.month.includes(month.id)
+                                        ? "tooltip tooltip-top tooltip-primary"
+                                        : ""
+                                    }
                                     data-tip={month.name}
                                   >
                                     <button
@@ -370,7 +574,9 @@ export default function ACList({
                                           : "badge-neutral"
                                       }`}
                                       aria-label={month.name}
-                                      onClick={() => setSelectedMonths([month.id])}
+                                      onClick={() =>
+                                        setSelectedMonths([month.id])
+                                      }
                                     >
                                       {month.letter}
                                     </button>
@@ -386,31 +592,39 @@ export default function ACList({
                 )}
                 {hasFossilSizeColumn && (
                   <>
-                  <td className="flex justify-center">
-                    {item.size ? <img src={item.size} alt="" /> : "-"}
-                  </td>
-                  <td >
-                    {item.color && item.color.length > 0 ? (
-                      <span className="flex flex-col align-center justify-center items-center gap-1">
-                        {item.color.map((color) => (
-                          <span
-                            key={color}
-                            className={`badge ${fossilColorClassMap[color.trim().toLowerCase()] ?? "badge-neutral"} w-16`}
-                            title={color}
-                          >{color}</span>
-                        ))}
-                      </span>
-                    ) : (
-                      "-"
-                    )}
-                  </td>
+                    <td className="flex justify-center">
+                      {item.size ? <img src={item.size} alt="" /> : "-"}
+                    </td>
+                    <td>
+                      {item.color && item.color.length > 0 ? (
+                        <span className="flex flex-col align-center justify-center items-center gap-1">
+                          {item.color.map((color) => (
+                            <span
+                              key={color}
+                              className={`badge ${
+                                fossilColorClassMap[
+                                  color.trim().toLowerCase()
+                                ] ?? "badge-neutral"
+                              } w-16`}
+                              title={color}
+                            >
+                              {color}
+                            </span>
+                          ))}
+                        </span>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
                   </>
                 )}
                 {hasCaughtTracking && (
                   <td>
                     <div className="form-control">
                       <label className="label cursor-pointer flex justify-center items-center">
-                        <span className="label-text me-2 md:hidden">Caught</span>
+                        <span className="label-text me-2 md:hidden">
+                          Caught
+                        </span>
                         <input
                           type="checkbox"
                           className="toggle toggle-success"
@@ -477,6 +691,15 @@ export default function ACList({
           </div>
         </div>
       </div>
+
+      <button
+        className={`fixed  right-4 btn btn-primary rounded-box z-50 transition-all duration-200 ${
+          showScrollTop ? "bottom-4" : "-bottom-28 pointer-events-none"
+        }`}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <ArrowUpIcon className="w-6 h-6" />
+      </button>
     </>
   );
 }

@@ -9,7 +9,7 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 import { useLocalStorage } from "usehooks-ts";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,6 +25,8 @@ export const links: LinksFunction = () => [
 ];
 
 const themes = [
+  "raccoon_retreat_night",
+  "raccoon_retreat",
   "light",
   "dark",
   "cupcake",
@@ -59,13 +61,37 @@ const themes = [
   "sunset",
 ];
 
+const formatThemeName = (theme: string) =>
+  theme
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+
 export function Layout({ children }: { children: React.ReactNode }) {
-  const [selectedTheme, setSelectedTheme, removeSelectedTheme] =
-    useLocalStorage("theme", "halloween");
+  const [selectedTheme, setSelectedTheme] = useLocalStorage("theme", "system");
+  const [prefersDark, setPrefersDark] = useState(false);
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", selectedTheme);
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const updatePreference = (event: MediaQueryList | MediaQueryListEvent) => {
+      setPrefersDark(event.matches);
+    };
+
+    updatePreference(mediaQuery);
+    mediaQuery.addEventListener("change", updatePreference);
+
+    return () => mediaQuery.removeEventListener("change", updatePreference);
   }, []);
+
+  const resolvedTheme =
+    selectedTheme === "system"
+      ? prefersDark
+        ? "raccoon_retreat_night"
+        : "raccoon_retreat"
+      : selectedTheme;
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", resolvedTheme);
+  }, [resolvedTheme]);
 
   return (
     <html lang="en">
@@ -102,7 +128,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     type="radio"
                     name="theme-buttons"
                     className="btn theme-controller join-item"
-                    aria-label={theme}
+                    aria-label={formatThemeName(theme)}
                     value={theme}
                     onChange={(e) => setSelectedTheme(e.target.value)}
                   />

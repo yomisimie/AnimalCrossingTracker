@@ -11,6 +11,47 @@
 @tailwind components;
 @tailwind utilities;
 
+:root[data-theme="raccoon_retreat"],
+:root[data-theme="raccoon_retreat_night"] {
+  --rounded-box: 1.1rem;
+  --rounded-btn: 0.85rem;
+  --rounded-badge: 1.1rem;
+  --tab-radius: 0.85rem;
+
+  --border-btn: 1px;
+  --tab-border: 1px;
+
+  --animation-btn: 0.2s;
+  --animation-input: 0.2s;
+  --btn-focus-scale: 0.98;
+}
+
+:root[data-theme="raccoon_retreat"] :is(.btn, .input, .select, .textarea),
+:root[data-theme="raccoon_retreat_night"] :is(.btn, .input, .select, .textarea) {
+  min-height: 2.6rem;
+}
+
+:root[data-theme="raccoon_retreat"] .btn,
+:root[data-theme="raccoon_retreat_night"] .btn {
+  padding-inline: 0.95rem;
+}
+
+:root[data-theme="raccoon_retreat"] :is(.input, .select, .textarea),
+:root[data-theme="raccoon_retreat_night"] :is(.input, .select, .textarea) {
+  padding-inline: 0.8rem;
+}
+
+:root[data-theme="raccoon_retreat"] :is(.card, .modal-box, .menu),
+:root[data-theme="raccoon_retreat_night"] :is(.card, .modal-box, .menu) {
+  border-radius: 1.1rem;
+}
+
+:root[data-theme="raccoon_retreat"] .table :is(th, td),
+:root[data-theme="raccoon_retreat_night"] .table :is(th, td) {
+  padding-block: 0.6rem;
+  padding-inline: 0.7rem;
+}
+
 /* html,
 body {
   @apply bg-white dark:bg-gray-950;
