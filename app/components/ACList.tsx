@@ -145,33 +145,37 @@ export default function ACList({
       );
     }
 
+    if (hasCaughtTracking && hideCaught) {
+      filteredData = filteredData.filter((item) => !caughtItems.includes(item.id));
+    }
+
+    if (hideDonated) {
+      filteredData = filteredData.filter(
+        (item) => !donatedItems.includes(item.id),
+      );
+    }
+
     setData(filteredData);
   }, [
     selectedTime,
     selectedMonths,
     searchTerm,
+    hideCaught,
+    hideDonated,
+    caughtItems,
+    donatedItems,
     rawData,
     months,
     hasTimeMonthFilters,
+    hasCaughtTracking,
   ]);
 
   const filterCaughtItems = (checked: boolean) => {
     setHideCaught(checked);
-    if (checked) {
-      setData((prev) => prev.filter((item) => !caughtItems.includes(item.id)));
-    } else {
-      setData(rawData);
-    }
   };
 
   const filterDonatedItems = (checked: boolean) => {
     setHideDonated(checked);
-    filterCaughtItems(checked);
-    if (checked) {
-      setData((prev) => prev.filter((item) => !donatedItems.includes(item.id)));
-    } else {
-      setData(rawData);
-    }
   };
 
   const exportSavedData = () => {
